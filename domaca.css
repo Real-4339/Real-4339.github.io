@@ -1,15 +1,26 @@
+/*
+body {
+    position: relative;
+    ja сделаю здесь блок
+}
+*/
+#block {
+    display: block; 
+    background-image: url(Gif/61P.gif);    
+    
+}
+
 .menu {
     
     list-style-type: none;
     margin-left: 0;
     padding-left: 0;
-    background-image: url(61P.gif);
-
+    
 }
 .menu a {
    display: block; 
    text-decoration: none;
-
+    
     font-family: sans-serif;
     color: #5757a0;
     display: inline-block;
@@ -24,7 +35,18 @@
 
 }
 
-    /*display: block;
+    /*
+    position: relative;
+    padding: 10px;
+    border: 1px solid #000;
+    background: #fc0;
+    height: 500px; 
+
+    position: absolute;
+    top: -12px;
+    left: 26pc;
+    
+    display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -37,4 +59,4 @@
     list-style: none;
     text-align: -webkit-match-parent;
     display: block;
-    position: relative;]*/
+    position: relative;*/
