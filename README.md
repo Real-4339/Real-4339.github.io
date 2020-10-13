@@ -1,2 +1,3 @@
 # bolsius
-My Multimedia Project
+My Multimedia Project 
+Making my 1 website about my mobile phone 
