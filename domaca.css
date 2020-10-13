@@ -17,6 +17,13 @@ body {
     padding-left: 0;
     
 }
+
+.menu li {
+
+    display: inline;
+
+}
+
 .menu a {
    display: block; 
    text-decoration: none;
@@ -27,12 +34,6 @@ body {
     padding: 10px 20px;
     background-color: lavender;
     border-bottom: 5px solid #5757a0;
-}
-
-.menu li {
-
-    display: inline;
-
 }
 
     /*
