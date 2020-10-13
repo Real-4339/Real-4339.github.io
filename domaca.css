@@ -45,7 +45,8 @@ body {
     position: absolute;
     top: -12px;
     left: 26pc;
-    
+    /text/color: red;
+    /Back color/background: red;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
