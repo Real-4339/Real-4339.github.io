@@ -12,14 +12,8 @@ body {
     vertical-align: top;
     background-repeat: cover;
     background-size: 100%;
-    padding: 2px;
+    padding: 10px;
     
-}
-
-#block_2 {
-    display: block; 
-    padding: 10px 20px;
-    background-color: white;
 }
 
 .menu {
@@ -47,6 +41,35 @@ body {
     background-color: lavender;
     border-bottom: 5px solid #5757a0;
 }
+
+#block_2 {
+    display: block; 
+    margin-left: 3%;
+    margin-right: 3%;
+    
+    padding: 20px;
+    background-color: white;
+}
+
+.p_1{
+    
+    margin: 0pc;
+    padding-left: 5mm;
+}
+
+.greetings {
+    
+    font-family: Comic Sans MS, kurzíva, sans-serif;
+
+}
+
+
+
+
+
+
+
+
 
     /*
     position: relative;
