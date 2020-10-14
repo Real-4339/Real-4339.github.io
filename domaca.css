@@ -1,7 +1,7 @@
 body {
 
-    margin: auto;
-    background-image: url(Gif/12P.gif);
+    margin: 70px;
+    background-image: url(Gif/bde.gif);
     background-size: 100%;
 
 }
@@ -42,13 +42,13 @@ body {
     border-bottom: 5px solid #5757a0;
 }
 
-#block_2 {
+#greeting {
     display: block; 
     margin-left: 3%;
     margin-right: 3%;
     
     padding: 20px;
-    background-color: white;
+    background-color: #ded0ff;
 }
 
 .p_1{
@@ -64,9 +64,9 @@ body {
 }
 .main {
     
-    background: #39b54a;
-    margin-top: 12%;
-    padding: 10px;
+    background: rgb(241, 234, 255);
+    margin: 10px 20px;
+    padding: 25%;
     
 }
 
