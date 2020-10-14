@@ -31,18 +31,18 @@ body {
 }
 
 .menu li {
-
-    display: inline;
-    padding-left: 11pc;
+    
+    display: inline-block;
+    padding-left: 10.7pc;
 }
 
 .menu a {
-   display: block; 
+   
    text-decoration: none;
     
     font-family: sans-serif;
     color: #5757a0;
-    display: inline-block;
+    
     padding: 10px 20px;
     background-color: lavender;
     border-bottom: 5px solid #5757a0;
