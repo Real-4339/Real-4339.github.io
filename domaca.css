@@ -1,14 +1,25 @@
-/*
 body {
-    position: relative;
-    ja сделаю здесь блок
+
+    margin: auto;
+    background-image: url(Gif/12P.gif);
+    background-size: 100%;
+
 }
-*/
-#block {
-    display: block; 
-    background-image: url(Gif/61P.gif);    
+
+#block_1 {
+     
+    background-image: url(Gif/61P.gif);
+    vertical-align: top;
     background-repeat: cover;
     background-size: 100%;
+    padding: 2px;
+    
+}
+
+#block_2 {
+    display: block; 
+    padding: 10px 20px;
+    background-color: white;
 }
 
 .menu {
