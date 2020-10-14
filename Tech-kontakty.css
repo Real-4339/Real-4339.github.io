@@ -1,0 +1,41 @@
+body {
+
+    margin: auto;
+    background-image: url(Gif/12P.gif);
+    background-size: 100%;
+
+}
+#block_1 {
+     
+    background-image: url(Gif/61P.gif);
+    vertical-align: top;
+    background-repeat: cover;
+    background-size: 100%;
+    padding: 2px;
+    
+}
+.menu {
+    
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+    
+}
+
+.menu li {
+    
+    display: inline-block;
+    padding-left: 8.2pc;
+}
+
+.menu a {
+   
+   text-decoration: none;
+    
+    font-family: sans-serif;
+    color: #5757a0;
+    
+    padding: 10px 20px;
+    background-color: lavender;
+    border-bottom: 5px solid #5757a0;
+}
