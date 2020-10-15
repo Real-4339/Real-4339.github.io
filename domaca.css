@@ -1,3 +1,15 @@
+/*
+* {
+	
+	letter-spacing:8px;
+	font-smooth: never;
+	-webkit-font-smoothing: none;
+	/*-moz-osx-font-smoothing: grayscale;/
+	
+    }
+
+    */
+
 body {
 
     margin: 70px;
@@ -87,8 +99,33 @@ h1 {
     line-height: 36px;
     text-align: center;
 }
+/*
+.article {
+    width: 800px;
+    background-color: black;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    box-shadow: black 0px 5px 10px;
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 13px;
+    padding-top: 20px;
+}
+*/
+.article p {
+    margin:20px;
+	font-size:13px;
+}
 
-
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
 
 
