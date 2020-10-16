@@ -164,11 +164,11 @@ b {
     
     .kom{
 
-        color: gold;
+        color: black;
     }
     .comment{
         width: 800px;
-        background-image: url(Gif/XkHL.gif);
+        background-color: #f2f2f2;
         background-size: cover;
         border: 1px solid #666;
         margin-left: auto;
@@ -185,7 +185,7 @@ b {
 
     position : fixed;
     bottom : 0;
-    height: 15vh;
+    
     background: rgb(33, 124, 94);
     width: 100%;
     margin-left: 0px;
@@ -195,6 +195,9 @@ b {
     border-left: 3px solid rgb(33, 31, 31);
     position: relative;
     
+    height: 100px;    
+    text-align: center;
+    font-size: 13pt;
     }
 
 .footer p{
