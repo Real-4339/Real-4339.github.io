@@ -156,8 +156,59 @@ p {
         
 }
 
+b {
+	color:#d2738a;
+	font-weight:normal;
+	box-shadow: black 0px 5px 10px;
+    }
+    
+    .kom{
 
+        color: gold;
+    }
+    .comment{
+        width: 800px;
+        background-image: url(Gif/XkHL.gif);
+        background-size: cover;
+        border: 1px solid #666;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        font-family: Tahoma;
+        font-size: 12px;
+        border-radius: 4px;
+        box-shadow: 2px 2px 2px #999;
+        padding-bottom : 50px;
+   }    
 
+.footer {
+
+    position : fixed;
+    bottom : 0;
+    height: 15vh;
+    background: rgb(33, 124, 94);
+    width: 100%;
+    margin-left: 0px;
+    padding: 20px 0;
+    border-bottom: 3px solid rgb(33, 31, 31);
+    border-right: 3px solid rgb(33, 31, 31);
+    border-left: 3px solid rgb(33, 31, 31);
+    position: relative;
+    
+    }
+
+.footer p{
+
+    color: #fff;
+    margin: 10px 0;    
+}
+        
+.copyright{
+        
+  font-size: 14px;
+  text-align:center;
+  border-top: 1px solid #fff;      
+}   
 
 
     /*
