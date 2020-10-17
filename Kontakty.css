@@ -61,7 +61,8 @@ a:hover { color: #fff; background: rgb(24, 144, 148); }
 #templatemo_header, #templatemo_main, #templatemo_footer {
 	width: 960px;
 	padding: 40px 10px;
-	margin: 0 auto;
+    margin: 0 auto;
+    
 }
 .half { 
 	width: 465px; 
@@ -78,3 +79,29 @@ a:hover { color: #fff; background: rgb(24, 144, 148); }
 .h10 { height: 10px }
 .h20 { height: 20px }
 .h40 { height: 40px }
+
+.footer {
+
+    background: rgb(33, 124, 94);
+    border-bottom: 3px solid rgb(33, 31, 31);
+    border-right: 3px solid rgb(33, 31, 31);
+    border-left: 3px solid rgb(33, 31, 31);
+    
+    width: 31.6cm;
+    height: 120px;    
+    text-align: center;
+    font-size: 13pt;
+    }
+
+.footer p{
+
+    color: #fff;
+    margin: 10px 0;    
+}
+        
+.copyright{
+        
+  font-size: 14px;
+  text-align:center;
+  border-top: 1px solid #fff;      
+}   

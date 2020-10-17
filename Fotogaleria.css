@@ -1,6 +1,6 @@
 body {
 
-    margin: 50px;
+    margin: 40px;
     background-image: url(Gif/bde.gif);
     background-size: cover;
 
@@ -23,6 +23,14 @@ body {
     
 }
 
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #cccccc;
+    text-align: center;
+    margin: 30px 0;
+}
+
 .menu {
     position: absolute;
     
@@ -38,7 +46,7 @@ body {
     float: right;
     
 }
-a:hover { color: #fff; background: rgb(24, 144, 148); }
+.menu a:hover { color: #fff; background: rgb(24, 144, 148); }
 
 .menu a {
 
@@ -50,19 +58,69 @@ a:hover { color: #fff; background: rgb(24, 144, 148); }
     padding: 13px 20px;
     
 }
+.container {
+    width: 100%; /* ширина блока-контейнера */
+    max-width: 960px; /* максимальная ширина контейнера */
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto; /* этот стиль центрирует контейнер */
+}
+.photo {
+    float: left; /* говорим элементам выстраиваться один за другим */
+    width: 33.333333%; /* устанавливаем ширину элемента */
+    padding: 10px; /* добавляем отступы с каждой стороны */
+    box-sizing: border-box; /* меняем способ вычисления ширины */
+}
+.photo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 10px solid #eee;
+    box-sizing: border-box;
+}
 
+.photo a:hover {opacity: 0.5;}
+.photo a {
+    display: block;
+    position: relative;
+}
+.photo a:after {
+    content: '';
+    background: transparent url(Gif/icons/eye-icon.png) no-repeat center;
+    width: 52px;
+    height: 35px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+}
+.photo:hover > a:after {
+    visibility: visible;
+}
+.photo figcaption {
+    font-family: 'Open Sans', sans-serif;
+    color: #999999;
+    text-align: center;
+    margin-top: 20px;
+}
+#gallery {
+    margin-bottom: 50px;
+}
+#gallery:after { 
+    content: '';
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
 .footer {
 
-    position : fixed;
-    bottom : 0;
-    
     background: rgb(33, 124, 94);
     width: 100%;
-    margin-left: 0px;
-    padding: 20px 0;
-    border-bottom: 3px solid rgb(33, 31, 31);
-    border-right: 3px solid rgb(33, 31, 31);
-    border-left: 3px solid rgb(33, 31, 31);
+    padding: 18px 0;
+    border: 3px solid rgb(33, 31, 31);
     position: relative;
     
     height: 100px;    
