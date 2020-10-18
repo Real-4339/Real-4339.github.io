@@ -21,6 +21,21 @@ body {
     position: relative;
     
 }
+.version {
+    border-radius: 2cm;
+    float: right;
+    margin-top: 5px;
+    margin-right: 8.4pc;
+    background-color: floralwhite;
+}
+.version a {
+    display: block;
+    text-align: center;
+    margin: 7px;
+    text-decoration: none;
+    border-radius: 1cm;
+}
+
 .maim {
 
     margin-left: auto;
