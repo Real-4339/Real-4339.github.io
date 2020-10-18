@@ -12,7 +12,7 @@
 
 body {
 
-    margin: 50px;
+    margin: 15px;
     background-image: url(Gif/bde.gif);
     background-size: cover;
 
@@ -34,7 +34,18 @@ body {
     position: relative;
     
 }
+.maim {
 
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+}
+.maim img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+}
 .menu {
     position: absolute;
     
@@ -42,8 +53,6 @@ body {
     right: 0;
     margin: auto;
     list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
     
 }
 

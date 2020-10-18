@@ -1,6 +1,6 @@
 body {
 
-    margin: 50px;
+    margin: 20px;
     background-image: url(Gif/bde.gif);
     background-size: 100%;
 
@@ -20,6 +20,18 @@ body {
     padding-top:43px;
     position: relative;
     
+}
+.maim {
+
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+}
+.maim img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
 }
 .menu {
     position: absolute;
