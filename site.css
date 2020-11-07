@@ -11,7 +11,23 @@ body {
     border-radius: 6px;
     background-image: url(Gif/61P.gif);
     background-size: cover;
-    width:800px;
+    width:878px;
+    height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	
+	box-shadow:black 0px 5px 10px;
+    text-align:center;
+    padding-top:43px;
+    position: relative;
+    
+}
+#block_2 {
+     
+    border-radius: 6px;
+    background-image: url(Gif/61P.gif);
+    background-size: cover;
+    width:841px;
     height:auto;
 	margin-left:auto;
 	margin-right:auto;
@@ -25,9 +41,8 @@ body {
 
 .menu {
     position: absolute;
-    
+    padding-left: 0;
     bottom: 0;
-    right: 0;
     margin: auto;
     list-style-type: none;
     
@@ -35,7 +50,6 @@ body {
 
 .menu li {
     float: right;
-    
 }
 
 a:hover { color: #fff; background: rgb(24, 144, 148); }
@@ -103,7 +117,7 @@ a:hover { color: #fff; background: rgb(24, 144, 148); }
     border-radius: 2cm;
     float: right;
     margin-top: 5px;
-    margin-right: 8.4pc;
+    margin-right: 6pc;
     background-color: floralwhite;
 }
 .version a {
