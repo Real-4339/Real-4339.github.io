@@ -249,7 +249,8 @@ b {
 }
 .main {  
     background: rgb(241, 234, 255);
-    margin: 15px 10px;
+    margin-left: auto;
+    margin-right: auto;
     width: 1200px;
     height: 600px;
     box-shadow: black 0px 5px 10px;
@@ -345,8 +346,24 @@ b {
  #main_section{
      -moz-box-flex: 1;
      -webkit-box-flex: 1;
-     margin: 20px;
+     margin: 20px 0px 20px 20px; 
+     background: #cccccc;
  }
+#artrit {
+    margin: ;
+}
+.pop {
+margin-bottom: 40px;
+}
+.pop h3 {
+ margin: 58px 0px 0px 0px;
+}
+.pop span {
+    font-size: 12px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+
  #main_aside{
      width: 720px;
      margin: 20px 0px;
@@ -386,7 +403,6 @@ b {
     bottom : 0;
     
     background: rgb(33, 124, 94);
-    width: 100%;
     margin-left: 0px;
     padding: 20px 0;
     border-bottom: 3px solid rgb(33, 31, 31);
