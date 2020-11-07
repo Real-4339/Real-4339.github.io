@@ -2,7 +2,7 @@ body {
 
     margin: 15px;
     background-image: url(Gif/bde.gif);
-    background-size: cover;
+    background-size: 100%;
 
 }
 
@@ -334,6 +334,51 @@ b {
     display: block; 
     height: 0; 
     clear: both;
+ }
+ #container {
+     display: -moz-box;
+     display: -webkit-box;
+
+     -moz-box-orient: horizontal;
+     -webkit-box-orient: horizontal;
+ }
+ #main_section{
+     -moz-box-flex: 1;
+     -webkit-box-flex: 1;
+     margin: 20px;
+ }
+ #main_aside{
+     width: 720px;
+     margin: 20px 0px;
+     padding: 10px;
+     background: #cccccc;
+ }
+ .block{
+     margin: 10px 0px 50px 0px;
+     padding: 20px;
+ }
+ hr{
+     width: 650px;
+ }
+ 
+ #main_aside img {
+    float: left;
+    margin: 0px 15px 0px 20px;
+    padding: 0px 0px 10px 0px;
+    
+ }
+ #main_aside img:nth-child(2n+1) {
+    float: right;
+    margin: 0px 0px 0px 40px;
+    transform: translate(0,-80px)
+    
+ }
+
+
+ .block p {
+     text-align: justify;
+     margin: 30px 20px 130px 20px;
+     
  }
 .footer {
 
