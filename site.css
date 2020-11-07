@@ -1,6 +1,6 @@
 body {
 
-    margin: 15px;
+    margin: 15px 15px 0px 15px;
     background-image: url(Gif/bde.gif);
     background-size: 100%;
 
@@ -337,9 +337,12 @@ b {
     clear: both;
  }
  #container {
+     margin-left: auto;
+     margin-right: auto;
      display: -moz-box;
      display: -webkit-box;
-
+     width: 1000px;
+     height: 280em;
      -moz-box-orient: horizontal;
      -webkit-box-orient: horizontal;
  }
@@ -350,22 +353,39 @@ b {
      background: #cccccc;
  }
 #artrit {
-    margin: ;
+    width: 200px;
+    position: absolute;
 }
 .pop {
-margin-bottom: 40px;
+    position: relative;
+    top: 35px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 .pop h3 {
- margin: 58px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
 }
 .pop span {
     font-size: 12px;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    
 }
-
-
+.pop hr {
+    width: 230px;
+}
+table{
+    margin: 10px;
+    margin-top: 50px;
+}
+td{
+    padding: 10px;
+}
+td:nth-child(2n)
+{
+    font-weight: bold;
+}
  #main_aside{
-     width: 720px;
+     width: 620px;
      margin: 20px 0px;
      padding: 10px;
      background: #cccccc;
@@ -374,6 +394,9 @@ margin-bottom: 40px;
      margin: 10px 0px 50px 0px;
      padding: 20px;
  }
+ .block hr{
+    width: 600px;
+}
  hr{
      width: 650px;
  }
