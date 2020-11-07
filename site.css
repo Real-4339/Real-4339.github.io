@@ -163,7 +163,7 @@ small{
     font-family: "Comic Sans MS", kurzíva, sans-serif;
 
 }
-.article {
+#article {
     width: 800px;
     background-color: floralwhite;
     height: auto;
@@ -178,12 +178,12 @@ small{
 }
 
 
-.article p {
+#article p {
 
     margin:20px;
 	font-size:20px;
 }
-#article {
+.article {
 	width:800px;
 	background-color:black;
 	height:auto;
@@ -201,16 +201,17 @@ small{
 	
 	}
 	
-#article p {
+.article p {
 	margin:20px;
-	font-size:13px;
-
+	font-size:13.4px;
 	
     }
- #article strong {
+ .article strong {
     color: rgb(255, 244, 209);
  }   
-
+ .article hr {
+	border-bottom-width:2px;
+ }
 p {
     
     margin-block-start: 1em;
@@ -219,7 +220,9 @@ p {
     margin-inline-end: 0px;
         
 }
-
+i {
+    color: #eea3b6;
+}
 b {
 	color:#d2738a;
 	font-weight:normal;
