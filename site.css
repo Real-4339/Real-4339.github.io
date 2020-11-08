@@ -163,13 +163,14 @@ small{
     font-family: "Comic Sans MS", kurzíva, sans-serif;
 
 }
-#article {
+.article_1 {
     width: 800px;
     background-color: floralwhite;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
+    margin-bottom: 10px;
     box-shadow: black 0px 5px 10px;
     text-align: center;
     letter-spacing: 8px;
@@ -178,7 +179,7 @@ small{
 }
 
 
-#article p {
+.article_1 p {
 
     margin:20px;
 	font-size:20px;
@@ -197,13 +198,13 @@ small{
 	letter-spacing:8px;
 	font-size:13px;
 	padding-top:20px;
-
+    padding-bottom: 10px;
 	
-	}
+    }
 	
 .article p {
 	margin:20px;
-	font-size:13.4px;
+	font-size:14px;
 	
     }
  .article strong {
@@ -222,6 +223,9 @@ p {
 }
 i {
     color: #eea3b6;
+}
+u{
+    background-color: rgb(14, 85, 62);
 }
 b {
 	color:#d2738a;
