@@ -39,6 +39,7 @@ body {
     
 }
 
+
 .menu {
     position: absolute;
     padding-left: 0;
@@ -317,6 +318,12 @@ b {
     margin-left: auto;
     margin-right: auto;
     margin: 0 auto; /* этот стиль центрирует контейнер */
+}
+.video {
+        position: absolute;
+        top: 164em;
+        padding: 10px 0px 10px 10px;/* добавляем отступы с каждой стороны */
+        margin: 0px 0px 0px 100px;
 }
 .photo {
     float: left; /* говорим элементам выстраиваться один за другим */
