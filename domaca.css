@@ -16,8 +16,93 @@ body {
 	background-size: cover;
 	color:#c1b492;	
 
-	
-	}
+}
+center {
+    text-align: -webkit-center;
+}
+.window {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background: #bfbfbf;
+    border: none;
+    border-top-color: #dfdfdf;
+    border-left-color: #dfdfdf;
+    border-right-color: #808080;
+    border-bottom-color: #808080;
+    box-shadow: 1px 1px 0 0 #000;
+    max-width: 400px;
+    padding: 1px;
+    text-align: center;
+	cursor: default;
+	color: #222;
+}
+.window .header {
+    margin: 2px 2px 0;
+    text-align: left;
+    padding: 2px 3px;
+    color: #fff;
+    background: url(str.png), #593ccf;
+    animation: animation 30s linear infinite;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+}
+#button-container {  
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 10em;
+    max-height: 10em;
+    padding: 2em;
+    border: 1px solid #000;
+    border-radius: 0;
+    background-image: url(Gif/mops.jpg); 
+    background-size: cover;  
+ } 
+
+#button {
+	-webkit-font-smoothing: none;
+	-moz-osx-font-smoothing: none;
+	border-top-color: #dfdfdf;
+	border-left-color: #dfdfdf;
+	border-right-color: #808080;
+	border-bottom-color: #808080;
+	box-shadow: 1px 1px 0 0 #000;
+	text-align: center;
+	font-family:"Times New Roman";
+	box-sizing: border-box;
+	font-size:15px;
+	outline: none;
+	padding: 3px;
+	border:0px 0px 1px 1px solid;
+	border-color:white;
+	border-radius:0;
+	color: #070707;
+	min-width:75px;
+	min-height:23px;
+	background: url(Gif/e9c7ff.png), #593ccf;
+	text-decoration: none;
+	margin-top:5px;
+	margin-bottom:6px;
+
+ }
+ button:enabled {
+	color: #070707;
+  }
+
+.pause {  
+  text-shadow: 1px 1px #fff;
+ }
+
+.hide { 
+    display: none;
+ }
+
+.remove {
+    position: absolute;
+    left: -999em;
+ }
+ 
+
 	
 a {
 	text-decoration:none;
