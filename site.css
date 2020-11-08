@@ -270,7 +270,7 @@ b {
     text-align: center;
     margin: 30px 0;
 }
-#h1 {
+.h1_0 {
     font-size: 32px;
     text-align: center;
     color: #b48608;
@@ -369,6 +369,80 @@ b {
     height: 0; 
     clear: both;
  }
+ #conto{
+        width: 100%; /* ширина блока-контейнера */
+        max-width: 1200px; /* максимальная ширина контейнера */
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0 auto; /* этот стиль центрирует контейнер */
+ }
+ .gallery {
+    margin-bottom: 50px;
+    width: 1200px;
+}
+.gallery:after { 
+    content: '';
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+ #oto{  
+   text-align: center;
+   color: cornflowerblue;
+   
+ }
+ .foto{
+    float: left; /* говорим элементам выстраиваться один за другим */
+    width: 33.333333%; /* устанавливаем ширину элемента */
+    padding: 10px 0px 10px 10px;/* добавляем отступы с каждой стороны */
+    box-sizing: border-box; /* меняем способ вычисления ширины */
+    margin: 0px;
+    
+ }
+ .foto img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 10px solid #eee;
+    box-sizing: border-box;
+ }
+ 
+.foto figcaption {
+    font-family: 'Open Sans', sans-serif;
+    color: #999999;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.thumb figure { 
+    width: 23%;
+    margin: 50px 50px 50px 85px;
+    display: inline-block;
+  }
+  
+  .thumb img {
+    border: 1px solid #55c5e9;
+    width: 100%;
+  }
+  
+  .thumb figcaption {
+    text-align: center;
+    font-style: italic;
+    color: black;
+    background: white;
+    
+  }
+
+.top img{
+    object-fit: contain;
+    margin: 0px 0px 100px 200px;
+    
+}
+.bottom img {
+    object-fit: contain;
+    margin: 0px 0px 100px 150px;
+}
+ 
  #container {
      margin-left: auto;
      margin-right: auto;
