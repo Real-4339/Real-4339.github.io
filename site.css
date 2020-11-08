@@ -2,11 +2,15 @@
 /* CSS Document */
 
 body {
-
+/*
     margin: 15px 15px 0px 15px;
     background-image: url(Gif/bde.gif);
     background-size: 100%;
-
+*/    
+    filter: blur(0.6px);
+    background: url(Gif/#e9c7ff.png), #e9c7ff;
+    animation: animsky 700s linear infinite;
+        
 }
 
 #block_1 {
