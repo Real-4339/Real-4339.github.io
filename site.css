@@ -38,7 +38,11 @@ body {
     position: relative;
     
 }
-
+.button {
+    text-align: center;
+    border-radius: 2cm;
+    background-color: floralwhite;
+}
 
 .menu {
     position: absolute;
