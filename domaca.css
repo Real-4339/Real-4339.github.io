@@ -4,7 +4,6 @@
 * {
 	margin:0px;
 	padding:0px;
-	letter-spacing:8px;
 	font-smooth: never;
 	-webkit-font-smoothing: none;
 	/*-moz-osx-font-smoothing: grayscale;*/
@@ -12,6 +11,7 @@
 	}
 	
 body {
+	letter-spacing:8px;
 	background-image:url(Gif/61P.gif);
 	background-size: cover;
 	color:#c1b492;	
