@@ -1,8 +1,7 @@
-$bg-color: #bfbfbf;
 @charset "UTF-8";
 /* CSS Document */
 
-* {
+*:not(#templatemo_header):not(#templatemo_main):not(#templatemo_footer){
 	margin:0px;
 	padding:0px;
 	font-smooth: never;
@@ -24,7 +23,7 @@ center {
 .window {
     margin-top: 50px;
     margin-bottom: 10px;
-    background: $bg-color;
+    background: #bfbfbf;
     border: none;
     border-top-color: #dfdfdf;
     border-left-color: #dfdfdf;
@@ -106,6 +105,10 @@ center {
 
  #Invs a {
    text-decoration:none;
+   a:hover {
+    color:#d2738a;
+  animation: wiredB2 1s ease-out infinite;
+  }
  }
 
  #Invs a:link {
@@ -115,25 +118,22 @@ center {
 #Invs a:visited {
         color:#d2738a;
         }
-#Invs  a:hover {
-    color:#d2738a;
-  animation: wiredB2 1s ease-out infinite;
-
-  }
+  
 #Invs a:active {
  color:#d2738a; 
  }
+ 
  #Invs #navbar {
                 
       background-color:black; 
        width:800px;
        height:auto;
-        margin-left:auto; 
-        margin-right:auto;
-                margin-top:40px;
-                box-shadow:black 0px 5px 10px;
-                text-align:center;
-                padding-top:40px;
+       margin-left:auto; 
+       margin-right:auto;
+       margin-top:40px;
+       box-shadow:black 0px 5px 10px;
+       text-align:center;
+       padding-top:40px;
                 
                 }
                 
@@ -431,18 +431,12 @@ body {
     bottom: 0;
     margin: auto;
     list-style-type: none;
-
-    @media screen and (max-width:800px){
-        background-color: green;
-    }
     
 }
 
 .menu li {
     float: right;
 }
-
-a:hover { color: #fff; background: rgb(24, 144, 148); }
 
 .menu a {
 
@@ -454,6 +448,8 @@ a:hover { color: #fff; background: rgb(24, 144, 148); }
     padding: 13px 20px;
     
 }
+
+/* .menu a:hover { color: #fff; background: rgb(24, 144, 148); } */
 
 /*
 .menu{
@@ -489,7 +485,6 @@ a:hover { color: #fff; background: rgb(24, 144, 148); }
  padding: 12.6px;
 }
 */
-a:hover { color: #fff; background: rgb(24, 144, 148); }
   
 .maim {
 
@@ -955,15 +950,14 @@ td:nth-child(2n)
 
     color: #fff;
     margin: 10px 0;    
-    &:last-child {
-        padding-top: 11px;
-        font-size: 14px;
-        text-align:center;
-        border-top: 1px solid #fff;      
-    }
 }
         
- 
+.copyright{
+        
+  font-size: 14px;
+  text-align:center;
+  border-top: 1px solid #fff;      
+}  
 @keyframes animation {
     100%{
       background-position:-1000px 3000px;

@@ -26,16 +26,16 @@
 <body>
   <div class="maim"><img src="Gif/Maimbot.png" width="10%" height="10%" /></div>
   <div class="version"><a href="Kontakty_en.html">English Version</a></div>
-    <header id="block_1"> 
+  <header id="block_1">
         <nav>
          <ul class="menu">
-          <li class="flex"><a href="Porovnanie.html">Porovnavanie</a></li> 
-          <li class="flex"><a href="Prislušenstvo.html">Prislušenstvo</a></li>   
-      <li class="flex"><a href="Dizajn.html">Dizajn</a></li>
-      <li id="flex"><a href="Technicka šp.html">Technicka špecifikacia</a></li>
-      <li class="flex"><a href="Kontakty.html">Kontakty</a></li>
-      <li class="flex"><a href="Fotogaleria.html">Fotogaleria</a></li>
-      <li class="flex"><a href="Domaca.html">Domaca</a></li>
+            <li class="flex"><a href="Porovnanie.php">Porovnavanie</a></li> 
+          <li><a href="Prislušenstvo.php">Prislušenstvo</a></li>   
+          <li><a href="Dizajn.php">Dizajn</a></li>
+          <li><a href="Technicka šp.php">Technicka špecifikacia</a></li>
+          <li><a href="Kontakty.php">Kontakty</a></li>
+          <li><a href="Fotogaleria.php">Fotogaleria</a></li>
+          <li><a href="Domaca.php">Domaca</a></li>
          </ul>
         </nav>
      </header> 

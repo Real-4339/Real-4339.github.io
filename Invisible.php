@@ -53,7 +53,7 @@
     <hr class="invs"/>
     <br />
     You are invisible.<br>
-    <a href="Domaca.html">[Go visible]</a> <br />
+    <a href="Domaca.php">[Go visible]</a> <br />
   <br />
 </div>
 <center>

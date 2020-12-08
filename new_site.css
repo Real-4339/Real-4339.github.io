@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-* {
+*:not(#templatemo_header):not(#templatemo_main):not(#templatemo_footer) {
   margin: 0px;
   padding: 0px;
   font-smooth: never;
@@ -94,16 +94,15 @@ button:enabled {
 
 #Invs a {
   text-decoration: none; }
+  #Invs a:hover {
+    color: #d2738a;
+    animation: wiredB2 1s ease-out infinite; }
 
 #Invs a:link {
   color: #d2738a; }
 
 #Invs a:visited {
   color: #d2738a; }
-
-#Invs a:hover {
-  color: #d2738a;
-  animation: wiredB2 1s ease-out infinite; }
 
 #Invs a:active {
   color: #d2738a; }
@@ -340,16 +339,9 @@ body {
   bottom: 0;
   margin: auto;
   list-style-type: none; }
-  @media screen and (max-width: 800px) {
-    .menu {
-      background-color: green; } }
 
 .menu li {
   float: right; }
-
-a:hover {
-  color: #fff;
-  background: #189094; }
 
 .menu a {
   text-decoration: none;
@@ -358,6 +350,7 @@ a:hover {
   display: inline-block;
   padding: 13px 20px; }
 
+/* .menu a:hover { color: #fff; background: rgb(24, 144, 148); } */
 /*
 .menu{
     display: flex;
@@ -392,10 +385,6 @@ a:hover {
  padding: 12.6px;
 }
 */
-a:hover {
-  color: #fff;
-  background: #189094; }
-
 .maim {
   margin-left: auto;
   margin-right: auto;
@@ -830,11 +819,11 @@ hr {
 .footer p {
   color: #fff;
   margin: 10px 0; }
-  .footer p:last-child {
-    padding-top: 11px;
-    font-size: 14px;
-    text-align: center;
-    border-top: 1px solid #fff; }
+
+.copyright {
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid #fff; }
 
 @keyframes animation {
   100% {

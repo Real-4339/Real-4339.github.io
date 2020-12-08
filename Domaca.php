@@ -21,28 +21,28 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="new_site.css">
+    <link rel="stylesheet" href="site.css">
 </head>
 <body>    
   <div class="maim"><img src="Gif/Maimbot.png" width="10%" height="10%" /></div>
   <div class="version"><a href="Domaca_en.html">English Version</a></div>
- <header id="block_1">
-    <nav>
-     <ul class="menu">
-      <li class="flex"><a href="Porovnanie.html">Porovnavanie</a></li>   
-      <li class="flex"><a href="Prislušenstvo.html">Prislušenstvo</a></li>   
-      <li class="flex"><a href="Dizajn.html">Dizajn</a></li>
-      <li id="flex"><a href="Technicka šp.html">Technicka špecifikacia</a></li>
-      <li class="flex"><a href="Kontakty.html">Kontakty</a></li>
-      <li class="flex"><a href="Fotogaleria.html">Fotogaleria</a></li>
-      <li id="home"><a href="Domaca.html">Domaca</a></li>
-     </ul>
-    </nav>
- </header> 
+  <header id="block_1">
+        <nav>
+         <ul class="menu">
+            <li class="flex"><a href="Porovnanie.php">Porovnavanie</a></li> 
+          <li><a href="Prislušenstvo.php">Prislušenstvo</a></li>   
+          <li><a href="Dizajn.php">Dizajn</a></li>
+          <li><a href="Technicka šp.php">Technicka špecifikacia</a></li>
+          <li><a href="Kontakty.php">Kontakty</a></li>
+          <li><a href="Fotogaleria.php">Fotogaleria</a></li>
+          <li><a href="Domaca.php">Domaca</a></li>
+         </ul>
+        </nav>
+     </header> 
   <div id="greeting">
   <section>
     <article class="greetings">
-        <p class="p_1"> Dobrý deň všeci)
+        <p class="p_1"> Dobrý deň všeci )
             Táto stránka je venovaná môjmu telefónu (Iphone Xr).
             V rámci toho predstavím telefón a jeho technické parametre,
             berúc do úvahy všetky faktory,
@@ -50,7 +50,7 @@
             <hr />
           <p class="button">  
             You are visible.<br>
-    <a href="Invisible.html" style="text-decoration: none; color: midnightblue;">[Go invisible]</a></p>
+    <a href="Invisible.php" style="text-decoration: none; color: midnightblue;">[Go invisible]</a></p>
     </article>
   </section>
   </div>
