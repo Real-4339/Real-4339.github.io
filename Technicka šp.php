@@ -1,3 +1,7 @@
+<?php include('./lang/en.php'); ?>
+<?php include('./lang/sk.php'); ?>
+<?php include("./functions.php"); ?>
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -25,12 +29,24 @@
 </head>
 <body>
     <div class="maim"><img src="Gif/Maimbot.png" width="10%" height="10%" /></div>
-    <div class="version"><a href="Technicka_en šp.html">English Version</a></div>
+    <div class="version"><a href="<?php 
+                 if($_SESSION['lang'] == "sk") {
+                   echo "/Technicka šp.php?lang=en";
+                 } else if ($_SESSION['lang'] == "en") {
+                   echo "/Technicka šp.php?lang=sk";
+                 } ?> ">
+        <?php 
+          if($_SESSION['lang'] == "en") {
+            echo "Slovak version";
+          } else {
+            echo "English version";
+          }
+        ?></a></div>
     <header id="block_1">
         <nav>
          <ul class="menu">
             <li class="flex"><a href="Porovnanie.php">Porovnavanie</a></li> 
-          <li><a href="Prislušenstvo.php">Prislušenstvo</a></li>   
+          <li><a href="Prislusenstvo.php">Prislušenstvo</a></li>   
           <li><a href="Dizajn.php">Dizajn</a></li>
           <li><a href="Technicka šp.php">Technicka špecifikacia</a></li>
           <li><a href="Kontakty.php">Kontakty</a></li>
@@ -45,415 +61,80 @@
      <article id="artrit">
       <div class="pop">
         <hr /> 
-        <h3>Parametre produktu</h3>
-        <span>Apple iPhone XR 64GB</span>
+        <?php echo (${$_SESSION['lang']}['tech_tab_1'] ); ?>
         <hr />
       </div>
       <div class="pop">
-        <h3>Hlavné charakteristiky:</h3>
-        <hr />
-      </div>
-      <div>
-        <table width="100%" cellpadding="5">
-          <tr>
-           <td>Výrobca</td>
-           <td>Apple</td>
-          </tr>
-          <tr>
-           <td>konštrukcia</td>
-           <td>dotykové</td>
-         </tr>
-         <tr>
-          <td>Operačný systém</td>
-          <td>iOS</td>
-        </tr>
-        <tr>
-          <td>Verzia operačného systému</td>
-          <td>iOS 12</td>
-        </tr>
-        <tr>
-          <td>Hmotnosť</td>
-          <td>194 g</td>
-        </tr>
-        <tr>
-          <td>Možnosť pamäťovej karty</td>
-          <td>nie</td>
-        </tr>
-        <tr>
-          <td>Pamäť RAM</td>
-          <td>3072 MB</td>
-        </tr>
-        <tr>
-          <td>Odolné</td>
-          <td>ano</td>
-        </tr>
-        <tr>
-          <td>Modelový rok</td>
-          <td>2018</td>
-        </tr>
-        <tr>
-          <td>Produktový rad</td>
-          <td>Apple iPhone XR</td>
-        </tr>
-        </table>
-      </div>
+      <?php echo (${$_SESSION['lang']}['tech_tab_2'] ); ?>
       <div class="pop">
         <hr />
-        <h3>Displej:</h3>
-        <hr />
-      </div>
-      <div>
-        <table width="100%" cellpadding="5">
-          <tr>
-           <td>Veľkosť displeja</td>
-           <td>6.1</td>
-          </tr>
-          <tr>
-           <td>Rozlíšenie displeja</td>
-           <td>1792 x 828</td>
-         </tr>
-         <tr>
-          <td>Pomer strán displeja</td>
-          <td>19.5:9</td>
-        </tr>
-        <tr>
-          <td>Počet farieb</td>
-          <td>16mil farieb</td>
-        </tr>
-        <tr>
-          <td>Počet displejov</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td>Jemnosť displeja (PPI)</td>
-          <td>326 PPI</td>
-        </tr>
-        </table>
-      </div>
+        <?php echo (${$_SESSION['lang']}['tech_tab_3'] ); ?>
       <div class="pop">
         <hr />
-        <h3>Rozmery:</h3>
-        <hr />
-      </div>
-      <div>
-        <table width="100%" cellpadding="5">
-          <tr>
-           <td>Výška</td>
-           <td>150.9 mm</td>
-          </tr>
-          <tr>
-           <td>Šírka</td>
-           <td>75.7 mm</td>
-         </tr>
-         <tr>
-          <td>Hĺbka</td>
-          <td>8.3 mm</td>
-        </tr>
-        </table>
-      </div>
+        <?php echo (${$_SESSION['lang']}['tech_tab_4'] ); ?>
       <div class="pop">
         <hr />
-        <h3>Fotoaparát:</h3>
-        <hr />
-      </div>
-      <div>
-        <table width="100%" cellpadding="5">
-          <tr>
-           <td>Fotoaparát</td>
-           <td>ano</td>
-          </tr>
-          <tr>
-           <td>Rozlíšenie fotoaparátu</td>
-           <td>12 Mpix</td>
-         </tr>
-         <tr>
-          <td>Automatické ostrenie</td>
-          <td>ano</td>
-        </tr>
-        <tr>
-          <td>Vstavaný blesk</td>
-          <td>ano</td>
-        </tr>
-        <tr>
-          <td>HD video</td>
-          <td>ano</td>
-        </tr>
-        <tr>
-          <td>Predná kamera</td>
-          <td>ano</td>
-        </tr>
-        <tr>
-          <td>Optická stabilizácia obrazu</td>
-          <td>1 objektív</td>
-        </tr>
-        <tr>
-          <td>Počet objektívov zadného fotoaparátu</td>
-          <td>1 objektív</td>
-        </tr>
-        <tr>
-          <td>Počet objektívov predného fotoaparátu</td>
-          <td>1 objektív</td>
-        </tr>
-        <tr>
-          <td>Svetelnosť objektívu hlavného fotoaparátu</td>
-          <td>f/1.8</td>
-        </tr>
-        <tr>
-          <td>Svetelnosť objektívu predného fotoaparátu</td>
-          <td>f/2.2</td>
-        </tr>
-        <tr>
-          <td>Maximálne rozlíšenie videa</td>
-          <td>2160p (4K)</td>
-        </tr>
-        </table>
-      </div>
+        <?php echo (${$_SESSION['lang']}['tech_tab_5'] ); ?>
       <div class="pop">
         <hr />
-        <h3>Ďaľšie funkcie a vlastnosti:</h3>
-        <hr />
-      </div>
-      <div>
-        <table width="100%" cellpadding="5">
-          <tr>
-           <td>Jack 3,5</td>
-           <td>nie</td>
-          </tr>
-          <tr>
-           <td>Vodoodolný</td>
-           <td>ano</td>
-         </tr>
-         <tr>
-          <td>Snímač otlačkov prstov</td>
-          <td>nie</td>
-        </tr>
-        <tr>
-          <td>Slúchadlový konektor</td>
-          <td>lightning</td>
-        </tr>
-        <tr>
-          <td>Verzia Bluetooth</td>
-          <td>5.0</td>
-        </tr>
-        </table>
-      </div>
+        <?php echo (${$_SESSION['lang']}['tech_tab_6'] ); ?>
       <div class="pop">
         <hr />
-        <h3>Písanie SMS a e-mailov:</h3>
-        <hr />
-      </div>
-      <div>
-        <table width="100%" cellpadding="5">
-          <tr>
-           <td>Multimediálne správy MMS</td>
-           <td>ano</td>
-          </tr>
-          <tr>
-           <td>Emailový prehliadač</td>
-           <td>ano</td>
-         </tr>
-        </table>
-      </div>
+        <?php echo (${$_SESSION['lang']}['tech_tab_7'] ); ?>
       <div class="pop">
         <hr />
-        <h3>Kontakty a volanie:</h3>
-        <hr />
-      </div>
-      <div>
-        <table width="100%" cellpadding="5">
-          <tr>
-           <td>MP3/WMA/AAC vyzváňanie</td>
-           <td>ano</td>
-          </tr>
-        </table>
-      </div>
+        <?php echo (${$_SESSION['lang']}['tech_tab_8'] ); ?>
       <div class="pop">
         <hr />
-        <h3>Baterka:</h3>
-        <hr />
-      </div>
-      <div>
-        <table width="100%" cellpadding="5">
-          <tr>
-           <td>Kapacita batérie</td>
-           <td>2942 mAh</td>
-          </tr>
-          <tr>
-           <td>Doba hovoru</td>
-           <td>1500 min</td>
-         </tr>
-         <tr>
-          <td>Bezdrôtové nabíjanie Qi</td>
-          <td>ano</td>
-        </tr>
-        </table>
-      </div>
+        <?php echo (${$_SESSION['lang']}['tech_tab_9'] ); ?>
       <div class="pop">
         <hr />
-        <h3>Hardware:</h3>
-        <hr />
-      </div>
-      <div>
-        <table width="100%" cellpadding="5">
-          <tr>
-           <td>Frekvencia procesoru</td>
-           <td>2.49 GHz</td>
-          </tr>
-          <tr>
-           <td>Počet jadier procesora</td>
-           <td>6</td>
-         </tr>
-         <tr>
-          <td>Užívateľská pamäť</td>
-          <td>64/128/256 GB</td>
-        </tr>
-        <tr>
-          <td>Akcelerometer (G-senzor)</td>
-          <td>ano</td>
-        </tr>
-        <tr>
-          <td>Gyroskopický senzor</td>
-          <td>ano</td>
-        </tr>
-        <tr>
-          <td>Konektor USB-C</td>
-          <td>nie</td>
-        </tr>
-        </table>
-      </div>
+        <?php echo (${$_SESSION['lang']}['tech_tab_10'] ); ?>
       <div class="pop">
         <hr />
-        <h3>Datove funkcie:</h3>
-        <hr />
-      </div>
-      <div>
-        <table width="100%" cellpadding="5">
-          <tr>
-           <td>GPS modul</td>
-           <td>ano</td>
-          </tr>
-          <tr>
-           <td>NFC</td>
-           <td>ano</td>
-         </tr>
-         <tr>
-          <td>GPRS</td>
-          <td>ano</td>
-        </tr>
-        <tr>
-          <td>EDGE</td>
-          <td>ano</td>
-        </tr>
-        <tr>
-          <td>LTE</td>
-          <td>ano</td>
-        </tr>
-        </table>
-      </div>
+        <?php echo (${$_SESSION['lang']}['tech_tab_11'] ); ?>
       <div class="pop">
         <hr />
-        <h3>Aplikácia:</h3>
-        <hr />
-      </div>
-      <div>
-        <table width="100%" cellpadding="5">
-          <tr>
-           <td>Diktafón</td>
-           <td>ano</td>
-          </tr>
-          <tr>
-           <td>Kalendár</td>
-           <td>ano</td>
-         </tr>
-         <tr>
-          <td>FM rádio</td>
-          <td>nie</td>
-        </tr>
-        <tr>
-          <td>Kalkulačka</td>
-          <td>ano</td>
-        </tr>
-        </table>
-      </div>
-     </article>
-   </section>
+        <?php echo (${$_SESSION['lang']}['tech_tab_12'] ); ?>
    <aside id="main_aside">
      <blockquote class="block">
-       <h3>Popis produktu</h3>
-       <p>Pre rok 2018 si Apple pripravil až tri varianty obľúbeného telefónu iPhone.
-       Model s označením XR je najdostupnejším z celej trojice, 
-       stále však ponúka dokonalú používateľskú skúsenosť a väčšinu prelomových technológií a 
-       inteligentných funkcií ako drahšie verzie. Už na prvý pohľad upúta tenké prachuvzdorné 
-       a vodotesné telo vytvorené z prémiových materiálov, ako je letecký hliník či najtvrdšie 
-       ochranné sklo na poli inteligentných telefónov. Na bezrámikovom 6,1-palcovom IPS displeji 
-       s jemným rozlíšením, širokým farebným rozsahom a verným zobrazením z akéhokoľvek uhla,
-        si budete radi prezerať fotografie vytvorené 12-megapixelovým fotoaparátom s optickou 
-        stabilizáciou, HDR a portrétnym režimom, ktorý spracuje najvýkonnejší procesor na trhu 
-        smartfónov A12 Bionic. Urýchli aj odomykanie tvárou.</p>
-        <hr />
-     </blockquote>
+     <?php echo (${$_SESSION['lang']}['tech_block_1'] ); ?>
      <blockquote class="block">
-      <h3>Predná strana patrí displeju</h3>
+      <h3><?php echo (${$_SESSION['lang']}['tech_h3_1'] ); ?></h3>
       <p><img class="Right" style="width: 180px;" src="Gif/Originals/3p_n.jpg" alt="image description" title="image tooltip"/>
-        Vďaka novým technológiám, ktoré umožnili natiahnuť obrazovku až do samotných rohov,
-        tvorí prednú časť telefónu priestorný 6,1-palcový displej.
-        Uchváti vás širokým spektrom farieb, ktoré navyše zobrazia s dokonalou vernosťou. 
-        Obrazovka sa jednoducho rozsvieti, keď na ňu ľahko poklepete.</p>
+      <?php echo (${$_SESSION['lang']}['tech_block_2'] ); ?>  
+      </p>
         <hr />
      </blockquote>
      <blockquote class="block">
-      <h3>Precízna konštrukcia</h3>
+      <h3><?php echo (${$_SESSION['lang']}['tech_h3_2'] ); ?></h3>
       
       <p><img class="Left" style="width: 180px;" src="Gif/Originals/2p.jpg" alt="image description" title="image tooltip"/>
-        Kvalita konštrukcie je pýchou iPhonov, a tak nie je prekvapením,
-         že základ modelu XR tvorí pevný rámček vyrobený z leteckej hliníkovej zliatiny. 
-         Do rámika sú vsadené tie najodolnejšie sklá, aké sú v oblasti smartfónov k dispozícii,
-        vďaka ktorých je možné zariadenie bezdrôtovo dobíjať. 
-        Telefón je samozrejme odolný proti vode aj prachu a na trh prichádza až v šiestich farbách.</p>
+      <?php echo (${$_SESSION['lang']}['tech_block_3'] ); ?></p>
         <hr />
      </blockquote>
      <blockquote class="block">
-      <h3>Najbezpečnejšie odomknutie tvárou</h3>
+      <h3><?php echo (${$_SESSION['lang']}['tech_h3_3'] ); ?></h3>
       <p><img class="Right" style="width: 180px;" src="Gif/Originals/8p.jpg" alt="image description" title="image tooltip"/>
-        Face ID resp.
-        identifikácia tvárou je rýchly a maximálne bezpečný spôsob,
-        ako overiť svoju identitu v mobilnom svete.
-        Jedným pohľadom na svoj iPhone môžete telefón odomknúť, 
-        vstupovať do bankových aplikácií, potvrdzovať platby, či sa žmurknutím prihlásiť na svoj email
-        alebo akýkoľvek iný účet. Teraz je celý proces omnoho rýchlejší.</p>
+      <?php echo (${$_SESSION['lang']}['tech_block_4'] ); ?></p>
         <hr />
      </blockquote>
      <blockquote class="block">
-      <h1>Inteligentný a výkonný procesor</h1>
+      <h1><?php echo (${$_SESSION['lang']}['tech_h1_1'] ); ?></h1>
       <p><img class="Left" style="width: 180px;" src="Gif/Originals/9p.jpg" alt="image description" title="image tooltip"/>
-        Pýchou celého zariadenia je nový čip A12 Bionic.
-        V porovnaní s predchádzajúcimi generáciami došlo k 50% navýšeniu grafického výkonu 
-        a 50% zníženiu celkovej spotreby vďaka úsporným jadrám. 
-        To hlavné ale predstavuje osemjadrový Neural Engine, 
-        špeciálna jednotka pre umelú inteligenciu, ktorá v spolupráci s vylepšeným obrazovým 
-        procesorom vytvorí snímky vyrážajúce dych a urýchli aj ďalšie operácie.</p>
+      <?php echo (${$_SESSION['lang']}['tech_block_5'] ); ?></p>
         <hr />
      </blockquote>
      <blockquote class="block">
-      <h3>Prelom v mobilnej fotografii</h3>
+      <h3><?php echo (${$_SESSION['lang']}['tech_h3_4'] ); ?></h3>
       <p><img class="Right" style="width: 180px; transform: translate(0,-5px);" src="Gif/Originals/11p.jpg" alt="image description" title="image tooltip"/>
-        Fotografia je výkladná skriňa všetkých technológií telefónu.
-        Popredné miesto samozrejme patrí sústave fotoaparátov, 
-        ktorú tvoria zadný 12-megapixelový a predný TrueDepth snímač s 
-        možnosťou portrétového režimu a nastaviteľnou hĺbkou ostrosti. 
-        Zrkadlovkový efekt rozostreného pozadia je vďaka novému procesoru 
-        a strojovému učeniu presnejší a viac tak vyniknú snímky s ostrým rozhraním svetla a tmy.</p>
+      <?php echo (${$_SESSION['lang']}['tech_block_6'] ); ?></p>
         <hr />
      </blockquote>
      <blockquote class="block">
-      <h3>Iný ako ostatné</h3>
+      <h3><?php echo (${$_SESSION['lang']}['tech_h3_5'] ); ?></h3>
       <p><img class="Left" style="width: 180px;" src="Gif/Originals/12p.jpg" alt="image description" title="image tooltip"/>
-        Apple iPhone je unikátny v mnohých smeroch. 
-        Žiadny iný telefón nevzniká ako jeden celok v rukách jedného výrobcu. 
-        Apple vyvíja svoj hardvér presne v súlade so svojim vlastným systémom iOS 12, 
-        takže do sebe všetko krásne zapadá a vytvára jeden funkčný celok. 
-        Výsledkom sú úchvatné fotografie, najlepšia rozšírená realita 
-        či napríklad garantovaná jednodenná výdrž.</p>
+      <?php echo (${$_SESSION['lang']}['tech_block_7'] ); ?></p>
         <hr />
      </blockquote>
      <blockquote class="block">

@@ -1,3 +1,8 @@
+<?php include('./lang/en.php'); ?>
+<?php include('./lang/sk.php'); ?>
+<?php include("./functions.php"); ?>
+
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -25,12 +30,27 @@
 </head>
 <body>
     <div class="maim"><img src="Gif/Maimbot.png" width="10%" height="10%" /></div>
-    <div class="version"><a href="Dizajn_en.html">English Version</a></div>
+    <div class="version">
+      <a href="<?php 
+                 if($_SESSION['lang'] == "sk") {
+                   echo "/Dizajn.php?lang=en";
+                 } else if ($_SESSION['lang'] == "en") {
+                   echo "/Dizajn.php?lang=sk";
+                 } ?> ">
+        <?php 
+          if($_SESSION['lang'] == "en") {
+            echo "Slovak version";
+          } else {
+            echo "English version";
+          }
+        ?>
+      </a>
+    </div>
     <header id="block_1">
         <nav>
          <ul class="menu">
             <li class="flex"><a href="Porovnanie.php">Porovnavanie</a></li> 
-          <li><a href="Prislušenstvo.php">Prislušenstvo</a></li>   
+          <li><a href="Prislusenstvo.php">Prislušenstvo</a></li>   
           <li><a href="Dizajn.php">Dizajn</a></li>
           <li><a href="Technicka šp.php">Technicka špecifikacia</a></li>
           <li><a href="Kontakty.php">Kontakty</a></li>
@@ -40,22 +60,12 @@
         </nav>
      </header> 
      <div class="article">
-      <h1>Konštrukcia a dizajn</h1>
-      <br />
+      <h1> <?php echo (${$_SESSION['lang']}['h1_dizajn'] ); ?></h1>
+      <br /> 
       <hr />
-      <p>Nový <i>iPhone XR</i> vyzerá z prednej strany úplne ináč,
-         ako vyzerá osmička. Dostal totiž <strong>vyrezaný displej</strong>
-         a chýba mu hardvérové <i>Home</i> tlačidlo, s ktorým zmizlo aj <i><u>Touch ID</u></i>.</p>
-      <p>Používateľ má k dispozícii iba <i>Face ID</i>, čiže rozpoznávanie tváre,
-         čo však vôbec nevadí. Práve naopak, funguje to priam dokonale. 
-         Používanie je navyše ešte <strong>pohodlnejšie</strong>, ako keď sme prikladali
-         konček prsta k biometrickému snímaču. Stačí len pozrieť na smartfón
-         a behom zlomku sekundy ho máte odomknutý, pričom mu neprekáža
-         ani prostredie so zlými svetelnými podmienkami.</p>
-      <p>Čo sa týka zadnej strany konštrukcie, tak tá pre zmenu <strong>pripomína</strong> osmičku. 
-        Jediné, čo tu prešlo dobre badateľnou zmenou, 
-        je <u>LED</u> blesk vedľa hlavného fotoaparátu, ktorý po novom nájdeme po ním. 
-        Všetko ostatné vrátane ochranného skla tu <strong>zostalo</strong> na svojom pôvodnom mieste.</p>
+      <p>
+      <?php echo (${$_SESSION['lang']}['dizajn_article_1'] ); ?>
+      </p>
       <br>
       <img style="width: 440px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/12p.jpg" alt="image description" title="image tooltip"/>
       <br />
@@ -66,214 +76,129 @@
       <br>
     </div>
     <div class="article">
-      <p>Ergonómia je vďaka <strong>oblým krivkám</strong> a pre mňa ideálnej fyzickej veľkosti 
-        bez jedinej chybičky. Na rozmery si nebude sťažovať ani ten, komu boli 
-        nadelené dlane či prsty <strong>stredného</strong> vzrastu. Tento iOS smartfón sa drží naozaj skvele.
-        Treba si iba zvyknúť na dobre viditeľné odtlačky prstov a šmykľavé telo, 
-        čo však vie na druhú stranu vyriešiť ochranné puzdro..</p>
-      <p>Zabudované stereo reproduktory vynikajú <strong>extrémnou hlasitosťou</strong> a <strong>skvelou 
-        čistotou</strong> reprodukcie, na čo sme si pri smartfónoch od <i>Apple</i> za tie roky už zvykli.</p>
-      <p><i>iPhone XR</i> možno označiť za akéhosi kríženca medzi <i><u>iPhone X</u></i> a <i><u>iPhone 8.</u></i>
-         Predná strana konštrukcie nesie podobu jedného modelu, zatiaľ čo zadná 
-         strana podobu toho druhého. Jednu dôležitú vec nemá však spoločnú <strong>so žiadnym</strong>
-         spomenutým modelom. Ide o zobrazovací panel, na ktorý sa teraz pozrieme trošku bližšie.</p>
+      <p><?php echo (${$_SESSION['lang']}['dizajn_article_2'] ); ?></p>
       <br>
     </div>
     <div class="article">
-      <h1>Displej</h1>
+      <h1><?php echo (${$_SESSION['lang']}['dizajn_h1_article_1'] ); ?></h1>
       <br />
       <hr />
-      <p>Ako je už viac-menej tradíciou, aj tento rok sme sa dočkali až <strong>6,1-palcového
-         displeja</strong> s názvom Retina. Po novom mu ale pribudlo ešte jedno slovíčko – <i><u>Liquid</u></i>.</p>
+      <p><?php echo (${$_SESSION['lang']}['dizajn_article_3'] ); ?></p>
          <br />
    <img style="width: 400px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/10p.jpg" alt="image description" title="image tooltip"/>
       <br />
       <br />
-      <p>Takzvaný <i>Liquid Retina</i> displej pozostáva z <strong>pokročilej</strong> LCD technológie, 
-        ktorá patrí do prvej ligy mobilného priemyslu. Všimnete si to ako na
-      <strong>pestrých farbách</strong>, tak aj na čiernej, pretože tá vás môže veľmi rýchlo zmiasť.
-        V niektorých svetelných podmienkach totiž vyzerá, akoby išlo o čiernu z 
-        nákladnejšej <i>OLED</i> alternatívy, kde sú počas zobrazovania <strong>vypnuté</strong> príslušné pixely.
-        Má teda veľmi blízko k realite, hoci je stále <strong>podsvietená</strong>.</p>
-      <p>Výrobca sa tak snažil šetriť náklady a zároveň príliš nezaostávať
-         za konkurenciou s operačným systémom <i>Android</i>, kde sú tento rok hitom <i>AMOLED</i> displeje.</p>
+      <p><?php echo (${$_SESSION['lang']}['dizajn_article_4'] ); ?></p>
          <br />
      <img style="width: 400px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/9p.jpg" alt="image description" title="image tooltip"/>
          <br />
          <br />
-         <p>Nový <i>iPhone XR</i> je vďaka tejto stratégii spoločnosti <i>Apple</i> nevyvrátiteľným dôkazom, 
-           že LCD ešte neodchádza do dôchodku. So svojimi zobrazovacími kapacitami sa <strong>nemusí
-           báť</strong> ani súčasných vlajkových lodí z opačného brehu rieky.</p>
+         <p>
+           <?php echo (${$_SESSION['lang']}['dizajn_article_5'] ); ?>
+         </p>
 
-           <h2>True Tone aj Wide color</h2>        
+           <h2>
+             <?php echo (${$_SESSION['lang']}['dizajn_h2_article_1'] ); ?>
+          </h2>        
 
-         <p>Za skvelou kvalitou displeja tu stoja dve dôležité veci. 
-           Jednou je zobrazovacia technológia <i>True Tone</i>, tou druhou 
-           zase <strong>široký farebný rozsah</strong>. Keď ich skombinujete do jednej kopy, 
-           vznikne prostrediu sa prispôsobujúci obraz v pestrofarebnom podaní, 
-           vďaka čomu ulahodí aj očiam <strong>náročnejšieho</strong> používateľa.</p>
-         <p>Keď ste v tmavom prostredí, farby sú automaticky <strong>teplejšie</strong>, 
-           zatiaľ čo počas pekného slnečného dňa vynikajú <strong>studeným</strong> tónom. 
-           Za všetkým stojí snaha výrobcu, aby odrážali realitu.
-           Android smartfóny to dokážu tiež, ale len vtedy, keď to spravíme <strong>manuálne</strong>, 
-           čo je z praktického hľadiska tak trošku zbytočne komplikované.
-           Komu by sa to predsa chcelo dennodenne upravovať?</p>
-        <p>Rozlíšenie displeja je niekde nad úrovňou <strong>300 pixelov</strong> na jeden palec,
-           takže nič špeciálne. Viac však podľa môjho skromného názoru ani netreba. 
-           S jemnosťou obrazu bude bez akýchkoľvek pochýb <strong>spokojná</strong> drvivá väčšina
-           potenciálnych používateľov. A to isté môžem povedať i o čitateľnosti na
-           priamom slnku či o najnižšej úrovni jasu, ktorú si v tmavej miestnosti 
-           nebudete vedieť vynachváliť.</p>
-      <p>Viac-menej už zaužívanú dotykovú technológiu <i>3D Touch</i> tu ale budete hľadať márne,
-         pretože tá tentokrát v hardvérovej výbave <strong>chýba</strong>. <i>Apple</i> podľa všetkého škrtal 
-         náklady aj v tejto oblasti a tu je výsledok. Mne to ale neprekážalo, 
-         pretože ju vôbec nevyužívam.</p>
+         <p>
+           <?php echo (${$_SESSION['lang']}['dizajn_article_6'] ); ?>
+        </p>
      <br />
     </div>
     <div class="article">
-      <h1>Fotoaparáty</h1>
+      <h1>
+        <?php echo (${$_SESSION['lang']}['dizajn_h1_article_2'] ); ?>
+      </h1>
       <br />
       <hr />
-      <p>Na zadnej strane <i>iPhone XR</i> nájdete iba <strong>jeden</strong> fotoaparát. 
-        Ten, ktorý tam zostal, ponúka širokouhlý pohľad a má aj skvelú svetelnosť.
-        Okrem clony <strong>f/1.8</strong> alebo špičkovej optickej stabilizácie dostal 
-        i pomerne <strong>veľké pixely</strong>, ktoré dosahujú <strong>1,4 µm</strong>. Táto kombinácia sa
-        postará o to, aby bolo na fotografii dostatočné množstvo svetla s takmer
-        nepostrehnuteľným šumom. A kde je veľa svetla, tam je logicky aj <strong>veľa detailov</strong>.</p>
-
-      <p>Počas dňa by som vyzdvihol predovšetkým <strong>skvelú expozíciu</strong> vrátane <strong>poriadne 
-        širokého</strong> dynamického rozsahu. Farby či tiene vyzerajú vďaka nemu na záberoch 
-        ako v realite. Jedno aj druhé si teda zaslúži potlesk, pretože výrazne zdvíha
-        úroveň kvality hlavného fotoaparátu.</p>
+      <p>
+        <?php echo (${$_SESSION['lang']}['dizajn_article_7'] ); ?>
+      </p>
         <br />
    <img style="width: 400px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/8p.jpg" alt="image description" title="image tooltip"/>
       <br />
-      <p><i><u>Píšu o tom</u></i> aj odborníci zo servera <i>DxOMark</i>, kde síce spomínajú <i>iPhone XS Max</i>,
-         no oba smartfóny dostali <strong>ten istý</strong> fotoaparát so širokouhlým pohľadom.
-         Modelu <i>XR</i> iba chýba ten s teleobjektívom, ktorý slúži na približovanie 
-         bez straty kvality, čo oceníme predovšetkým pri portrétoch. 
-         Preto možno z tejto príbuznej recenzie bez obáv vychádzať. 
-         Testovaná <i>iOS</i> novinka im zatiaľ <strong>chýba</strong> v databáze a teda aj v príslušnom rebríčku.</p>
-
-         <p>Okrem skvelej expozície alebo širokého dynamického rozsahu tu stojí za pochvalu ešte 
-           aj <strong>automatické zaostrovanie</strong>. Okrem toho, že je presné, je aj <strong>bleskovo rýchle</strong>. 
-           Keď stlačíte spúšť, v priebehu zlomku sekundy vyhotovíte prvotriedne vyzerajúci záber,
-           ktorý je podstate krajší ako záber z <i><u>iPhone 8</u></i>. A to aj napriek tomu, 
-           že špecifikácia zostala viac-menej <strong>bez</strong> veľkých zmien.</p>      
-         <p>Inžinieri z <i>Apple</i> sústredili tento rok značnú časť inovácií na <strong>softvérovú
-            stránku</strong> hlavného fotoaparátu, vďaka čomu sa im podarilo zvýšiť kvalitu aj 
-            bez značného zásahu do čísiel hardvéru. Používateľ má preto k dispozícii 
-          <strong>ten istý</strong> počet megapixelov aj <strong>to isté</strong> clonové číslo.</p>
+      <p>
+        <?php echo (${$_SESSION['lang']}['dizajn_article_8'] ); ?>
+      </p>
             <br />
             <img style="width: 400px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/14.jpg" alt="image description" title="image tooltip"/>
            <br />
            <br />
-         <p>Čaro tu tkvie v čerstvo pridanej funkcionalite <i>Smart HDR</i>,
-            ktorú obsluhuje <strong>umelá inteligencia</strong>. Strojové učenie vyberá vyhotovené zábery, 
-            aby ich dalo dokopy a vytvorilo tak jednu kvalitnú fotografiu.
-            To najdôležitejšie tu ale je, že výber čaká aj <strong>jednotlivé zábery</strong>, 
-            nielen ten komplexný. Tento šikovný trik <strong>vizuálne obohatí</strong> tiene a
-            na príliš lesklých miestach je zase po novom vidieť trošku viac detailov.</p>
+         <p>
+           <?php echo (${$_SESSION['lang']}['dizajn_article_9'] ); ?>
+        </p>
             
-            <h2>Video</h2>
+            <h2>
+              <?php echo (${$_SESSION['lang']}['dizajn_h2_article_2'] ); ?>
+            </h2>
 
-        <p>Nesklamala ma však ani kamera. Ak potrebujete smartfón, ktorý vie vyhotoviť kvalitné videá, 
-          tak <i>iPhone XR</i> môže byť jedna z potenciálnych možností. 
-          Bohaté detaily, opäť široký dynamický rozsah, perfektne fungujúca optická stabilizácia
-          a aj perfektný autofocus sa postarajú o to, aby ste z tejto novinky dostali 
-        <strong>prvotriedne vyzerajúce</strong> video zábery.</p>
+        <p>
+          <?php echo (${$_SESSION['lang']}['dizajn_article_10'] ); ?>
+        </p>
           
-          <h2>Selfie</h2>
-      <p>Iný kvalitatívny štandard ale nečakajte ani od predného fotoaparátu, 
-        kde zabudovali <strong>7 Mpx</strong> snímač s clonou <strong>f/2.</strong> a s vylepšenou elektronickou 
-        stabilizáciou obrazu. Prvé dve veci síce zostali bez zmien, no to však 
-        na druhú stranu hneď neznamená, že nie je čo chváliť.</p>
-        <p>Pokiaľ patríte medzi takzvaných <i>selfiemaniakov</i>, 
-          určite si prídete na svoje. Predovšetkým vďaka vopred pripraveným 
-        <strong>štúdiovým svetlám</strong> či <strong>prirodzene</strong> vyzerajúcemu rozmazanému pozadiu
-          pri fotení portrétov. Jedno aj druhé im totiž dáva profesionálny šmrnc.
-          Keď nájdete správny uhol a ste v prostrední so skvelými svetelnými podmienkami,
-          viete vyhotoviť až <strong>prekvapivo</strong> peknú selfie.</p>
+          <h2>
+            <?php echo (${$_SESSION['lang']}['dizajn_h2_article_3'] ); ?>
+          </h2>
+      <p>
+        <?php echo (${$_SESSION['lang']}['dizajn_article_11'] ); ?>
+      </p>
      <br />
     </div>
     <div class="article">
-      <h1>Výkon a systém</h1>
+      <h1>
+        <?php echo (${$_SESSION['lang']}['dizajn_h1_article_3'] ); ?>
+      </h1>
       <br />
       <hr />
-      <p>V útrobách prítomný čipset <i><u>A12 Bionic</u></i> patrí <strong>medzi to najlepšie</strong>,
-         čo súčasný mobilný priemysel ponúka. Keby neexistovala jeho lepšia verzia <i><u>A12X</u></i>, 
-         ktorá poháňa nový <i><u>iPad Pro</u></i>, tak by bol podľa benchmark aplikácie </i>AnTuTu</i> suverénnym 
-        <strong>šampiónom</strong> vo výkone. Nestačí mu </i>Snapdragon 845</i> a ani ambiciózny <i><u>Kirin 980</u></i> v </i>Android</i> 
-         smartfóne <i><u>Huawei Mate 20 Pro</u></i>. Je teda úplne jedno, čo s </i>iPhone XR</i> robíte, pretože ho
-        <strong>vôbec nič</strong> nezaskočí.</p>
+      <p>
+        <?php echo (${$_SESSION['lang']}['dizajn_article_12'] ); ?>
+      </p>
      <br />
     </div>
     <div class="article">
-      <h1>iOS 12</h1>
+      <h1>
+        <?php echo (${$_SESSION['lang']}['dizajn_h1_article_4'] ); ?>
+      </h1>
       <br />
       <hr />
-      <p>Operačný systém <i><u>iOS 12</u></i> priniesol podporu pre 32-členný
-         video hovor prostredníctvom <i>FaceTime</i>, detailnejší manažment
-         notifikácií vrátane ich zoskupovania a aj novú funkcionalitu 
-         na vyváženie nášho digitálneho života.</p>
-         <p>To najhlavnejšie tu ale reprezentuje <strong>rýchlejšie spúšťanie</strong>
-            podaktorých aplikácií a dočasné navýšenie výpočtového výkonu 
-            v situáciách, kedy sú od smartfónu vyžadované príliš veľké nároky.
-            Keď je hardvér nadštandardne vyťažený, automaticky sa aktivuje špeciálny 
-            režim, ktorý dokáže <strong>zdvojnásobiť</strong> kapacity procesora.</p>
-            <p>Ako som už spomínal, na <i>iPhone XR</i> môžete robiť čokoľvek, 
-              no i tak nenastane situácia, kedy by ste postrehli akékoľvek 
-              záseky obrazovky či neplynulé reakcie. Tak skvelú <strong>synergiu</strong> hardvéru 
-              so softvérom by ste inde hľadali asi len naozaj márne.</p>
+      <p>
+        <?php echo (${$_SESSION['lang']}['dizajn_article_13'] ); ?>
+      </p>
             <br />
     <img style="width: 700px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/pp.png" alt="image description" title="image tooltip"/>
     <br />
     <br />
-    <p>Chválu si zaslúži aj používateľské prostredie <i>iOS 12</i> 
-      a jeho animácie či dizajn, ktorý vyniká moderným </strong>minimalizmom</strong>. 
-      Nie je však iba rýchle alebo pekné, ale aj </strong>intuitívne</strong>, čo znamená,
-      že s ovládaním smartfónu nebude mať problém ani technicky menej zdatný jedinec. 
-      Keď si zvykne na chýbajúce <i>Home</i> tlačidlo a na nové gestá, tú </strong>jednoduchosť</strong> si 
-      zaručene nebude vedieť vynachváliť.</p>
+    <p>
+      <?php echo (${$_SESSION['lang']}['dizajn_article_14'] ); ?>
+    </p>
     </div>
     <div class="article">
-      <h1>Výdrž batérie</h1>
+      <h1>
+        <?php echo (${$_SESSION['lang']}['dizajn_h1_article_5'] ); ?>
+      </h1>
       <br />
       <hr />
-      <p>Možno to bude znieť trošku divne, ale <i>iPhone XR</i> ponúka <i><u>najlepšiu výdrž</u></i> spomedzi
-         všetkých troch nových iOS smartfónov. Energetickej efektivite tohto modelu 
-         nestačí ani <i>XS</i> a ani podstatne drahší <i>XS Max</i>. Kombinácia veľkej batérie,
-         malého počtu pixelov a energeticky efektívneho čipsetu je teda skutočne <strong>cítiť</strong>.</p>
-         <p>Zariadenie mi na jedno nabitie vydržalo <strong>jeden celý deň</strong>, hoci patrím medzi 
-           náročnejších používateľov. Sem tam som s niekým telefonoval, písal si cez
-          <i>Messenger</i> alebo <i>WhatsApp</i>, surfoval po webe, počúval hudbu, sem-tam čosi
-           odfotografoval alebo som brázdil sociálnymi sieťami. Jednoducho klasika.</p>
+      <p>
+        <?php echo (${$_SESSION['lang']}['dizajn_article_15'] ); ?>
+      </p>
      <br />
     <img style="width: 400px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/2p.jpg" alt="image description" title="image tooltip"/>
     <br />
     <br />
-    <p>Jediné, čo mi tu nesmierne prekážalo, je <strong>absencia</strong> rýchlo-nabíjačky v základnom
-      balení smartfónu. Keď už dávam tak veľa peňazí za elektronický produkt, 
-      očakávam, že mi výrobca k nemu poskytne aj <strong>poriadne</strong> príslušenstvo. 
-      Nie však za <i><u>dodatočných 75 €</u></i>. Podobný osud vás navyše čaká i vtedy, 
-      keď budete chcieť využívať <strong>bezdrôtové</strong> nabíjanie. <i>Qi</i> podložka predsa tiež niečo stojí.</p>
+    <p>
+      <?php echo (${$_SESSION['lang']}['dizajn_article_16'] ); ?>
+    </p>
     </div>
     <div class="article">
-      <h1>Záver</h1>
+      <h1>
+        <?php echo (${$_SESSION['lang']}['dizajn_h1_article_6'] ); ?>
+      </h1>
       <br />
       <hr />
-      <p>Modernej vyzerajúci, špičkovo vybavený a enormne výkonný smartfón 
-        pre náročných zákazníkov. Nový <i>iPhone XR</i> má <strong>všetko</strong>, čo by mal mať 
-        každý jeden tohtoročný high-end model, a to vrátane <strong>vyladeného</strong> operačného systému,
-        ktorý vám vie poskytnúť prvotriedne skúsenosti z používania.
-        Ak máte <i>iPhone 8</i> alebo <i>iPhone 7</i>, tak ani neváhajte.</p>
-
-       <p>Keby som mal porovnať výbavu tohto modelu s iPhone XS,
-          budete <strong>ukrátení</strong> o zobrazovaciu <i>>OLED</i> technológiu, <i>3D Touch</i>,
-         konštrukciu z nehrdzavejúcej ocele alebo duálny fotoaparát na zadnej
-          strane, no to je asi tak všetko. Keď vám to však za tých približne 
-          250 € navyše stojí, tak nech sa páči. 
-          Ani s kúpou drahšieho modelu <strong>nič nepokazíte</strong>.</p>
+      <p>
+        <?php echo (${$_SESSION['lang']}['dizajn_article_17'] ); ?>
+      </p>
       <br />
     </div>
     <footer class="footer">

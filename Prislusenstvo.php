@@ -1,3 +1,7 @@
+<?php include('./lang/en.php'); ?>
+<?php include('./lang/sk.php'); ?>
+<?php include("./functions.php"); ?>
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -25,12 +29,24 @@
 </head>
 <body>
     <div class="maim"><img src="Gif/Maimbot.png" width="10%" height="10%" /></div>
-    <div class="version"><a href="Prislušenstvo_en.html">English Version</a></div>
+    <div class="version"><a href="<?php 
+                 if($_SESSION['lang'] == "sk") {
+                   echo "/Prislusenstvo.php?lang=en";
+                 } else if ($_SESSION['lang'] == "en") {
+                   echo "/Prislusenstvo.php?lang=sk";
+                 } ?> ">
+        <?php 
+          if($_SESSION['lang'] == "en") {
+            echo "Slovak version";
+          } else {
+            echo "English version";
+          }
+        ?></a></div>
     <header id="block_1">
         <nav>
          <ul class="menu">
             <li class="flex"><a href="Porovnanie.php">Porovnavanie</a></li> 
-          <li><a href="Prislušenstvo.php">Prislušenstvo</a></li>   
+          <li><a href="Prislusenstvo.php">Prislušenstvo</a></li>   
           <li><a href="Dizajn.php">Dizajn</a></li>
           <li><a href="Technicka šp.php">Technicka špecifikacia</a></li>
           <li><a href="Kontakty.php">Kontakty</a></li>
@@ -40,30 +56,30 @@
         </nav>
      </header> 
      <div class="thumb">
-        <h1 id="oto" style="text-shadow: black 2px 2px 2px;">Populárne prislušenstvo</h1>
+        <h1 id="oto" style="text-shadow: black 2px 2px 2px;"><?php echo (${$_SESSION['lang']}['h1_prislusenstvo'] ); ?></h1>
         <figure>
           <img src="Gif/Originals/kop.jpg">
-          <figcaption>I-BLASON ARES kryt Apple iPhone XR čierny</figcaption>
+          <figcaption><?php echo (${$_SESSION['lang']}['prislusenstvo_fig_1'] ); ?></figcaption>
         </figure><!--
         --><figure>
           <img src="Gif/Originals/lol.jpg" style = "height: 302px;">
-          <figcaption>Ochranné sklo na iPhone XR</figcaption>
+          <figcaption><?php echo (${$_SESSION['lang']}['prislusenstvo_fig_2'] ); ?></figcaption>
         </figure><!--
         --><figure>
           <img style = "height: 300px; background-color: white; object-fit: contain;" src="Gif/Originals/mom.jpg">
-          <figcaption>Nabíjačka Apple MagSafe</figcaption>
+          <figcaption><?php echo (${$_SESSION['lang']}['prislusenstvo_fig_3'] ); ?></figcaption>
         </figure><!--
         --><figure>
           <img src="Gif/Originals/okjpg.jpg">
-          <figcaption>Silikónový obal Apple iPhone XR</figcaption>
+          <figcaption><?php echo (${$_SESSION['lang']}['prislusenstvo_fig_4'] ); ?></figcaption>
         </figure><!--
         --><figure>
           <img src="Gif/Originals/op.jpg" style = "height: 285px;">
-          <figcaption>3D ochranné temperované sklo pre Apple iPhone XR</figcaption>
+          <figcaption><?php echo (${$_SESSION['lang']}['prislusenstvo_fig_5'] ); ?></figcaption>
         </figure><!--
         --><figure>
           <img src="Gif/Originals/top.jpg" style = "height: 270px;">
-          <figcaption>SPIGEN ULTRA HYBRID Apple iPhone XR oranžový,fialový,modrý</figcaption>
+          <figcaption><?php echo (${$_SESSION['lang']}['prislusenstvo_fig_6'] ); ?></figcaption>
         </figure>
       </div>
      <footer class="footer">

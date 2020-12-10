@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-*:not(#templatemo_header):not(#templatemo_main):not(#templatemo_footer) {
+* {
   margin: 0px;
   padding: 0px;
   font-smooth: never;
@@ -96,7 +96,9 @@ button:enabled {
   text-decoration: none; }
   #Invs a:hover {
     color: #d2738a;
-    animation: wiredB2 1s ease-out infinite; }
+    animation: wiredB2 1s ease-out infinite;
+    background-color: black;
+  }
 
 #Invs a:link {
   color: #d2738a; }
@@ -292,7 +294,7 @@ button:enabled {
     color: #c1b492;
     text-shadow: #c1b492 1px 1px 6px; } }
 
-body {
+body:not(#Invs) {
   /*
     margin: 15px 15px 0px 15px;
     background-image: url(Gif/bde.gif);
@@ -350,7 +352,7 @@ body {
   display: inline-block;
   padding: 13px 20px; }
 
-/* .menu a:hover { color: #fff; background: rgb(24, 144, 148); } */
+ .menu a:hover { color: #fff; background: rgb(24, 144, 148); } 
 /*
 .menu{
     display: flex;

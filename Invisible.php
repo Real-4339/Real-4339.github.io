@@ -21,7 +21,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="Favikon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" type="text/css" href="new_site.css">
+  <link rel="stylesheet" type="text/css" href="site.css">
   <link type="text/css" rel="stylesheet" media="screen and (max-width: 800px)" href="/stylesU400px.css">
   
   </head>

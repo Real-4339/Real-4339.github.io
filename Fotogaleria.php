@@ -1,3 +1,7 @@
+<?php include('./lang/en.php'); ?>
+<?php include('./lang/sk.php'); ?>
+<?php include("./functions.php"); ?>
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -25,12 +29,24 @@
 </head>
 <body>
     <div class="maim"><img src="Gif/Maimbot.png" width="10%" height="10%" /></div>
-    <div class="version"><a href="Fotogaleria_en.html">English Version</a></div>
+    <div class="version"><a href="<?php 
+                 if($_SESSION['lang'] == "sk") {
+                   echo "/Fotogaleria.php?lang=en";
+                 } else if ($_SESSION['lang'] == "en") {
+                   echo "/Fotogaleria.php?lang=sk";
+                 } ?> ">
+        <?php 
+          if($_SESSION['lang'] == "en") {
+            echo "Slovak version";
+          } else {
+            echo "English version";
+          }
+        ?></a></div>
     <header id="block_1">
         <nav>
          <ul class="menu">
             <li class="flex"><a href="Porovnanie.php">Porovnavanie</a></li> 
-          <li><a href="Prislušenstvo.php">Prislušenstvo</a></li>   
+          <li><a href="Prislusenstvo.php">Prislušenstvo</a></li>   
           <li><a href="Dizajn.php">Dizajn</a></li>
           <li><a href="Technicka šp.php">Technicka špecifikacia</a></li>
           <li><a href="Kontakty.php">Kontakty</a></li>
@@ -40,7 +56,7 @@
         </nav>
      </header> 
      <div class="container">
-        <h1 id="h1_foto">Fotogaléria</h1>
+        <h1 id="h1_foto"><?php echo (${$_SESSION['lang']}['foto_h1'] ); ?></h1>
         <div id="gallery">
             <figure class="photo">
                 <a href="Gif/Originals/1p.jpg"><img src="Gif/1p.jpg" alt="Prislušenstvo" style="height: 300px;"/></a>

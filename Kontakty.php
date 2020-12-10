@@ -1,3 +1,7 @@
+<?php include('./lang/en.php'); ?>
+<?php include('./lang/sk.php'); ?>
+<?php include("./functions.php"); ?>
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
@@ -25,12 +29,25 @@
 </head>
 <body>
   <div class="maim"><img src="Gif/Maimbot.png" width="10%" height="10%" /></div>
-  <div class="version"><a href="Kontakty_en.html">English Version</a></div>
+  <div class="version"><a href="<?php 
+                 if($_SESSION['lang'] == "sk") {
+                   echo "/Kontakty.php?lang=en";
+                 } else if ($_SESSION['lang'] == "en") {
+                   echo "/Kontakty.php?lang=sk";
+                 } ?> ">
+        <?php 
+          if($_SESSION['lang'] == "en") {
+            echo "Slovak version";
+          } else {
+            echo "English version";
+          }
+        ?>
+        </a></div>
   <header id="block_1">
         <nav>
          <ul class="menu">
             <li class="flex"><a href="Porovnanie.php">Porovnavanie</a></li> 
-          <li><a href="Prislušenstvo.php">Prislušenstvo</a></li>   
+          <li><a href="Prislusenstvo.php">Prislušenstvo</a></li>   
           <li><a href="Dizajn.php">Dizajn</a></li>
           <li><a href="Technicka šp.php">Technicka špecifikacia</a></li>
           <li><a href="Kontakty.php">Kontakty</a></li>
@@ -42,22 +59,28 @@
      <div class="main">
         <section>
           <div id="templatemo_main">
-            <h1>Kontaktné informácie</h1>
-              <h4>Pošlite mi správu hneď!</h4>
-              <p>Pristúpte k šálke kávy alebo nám nechajte odkaz: </p>
+            <h1>
+              <?php echo (${$_SESSION['lang']}['h1_kontakty'] ); ?>
+              </h1>
+              <h4>
+                <?php echo (${$_SESSION['lang']}['h4_kontakty'] ); ?>
+                </h4>
+              <p>
+                <?php echo (${$_SESSION['lang']}['p_kontakty'] ); ?>
+                </p>
             <div class="half left">
                 <div id="contact_form">
                   <form method="post" name="contact" action="#">        
-                    <label for="author">Meno:</label>
+                    <label for="author"><?php echo (${$_SESSION['lang']}['kontakty_form_meno'] ); ?></label>
                     <input type="text" id="author" name="author" class="required input_field" />
                     <div class="cleaner h10"></div>
-                    <label for="email">Email:</label> 
+                    <label for="email"><?php echo (${$_SESSION['lang']}['kontakty_form_email'] ); ?></label> 
                     <input type="text" id="email" name="email" class="validate-email required input_field" />
                     <div class="cleaner h10"></div>              
                      <label for="subject">Subject:</label>
                       <input type="text" name="subject" id="subject" class="input_field" />
                       <div class="cleaner h10"></div> 
-                       <label for="text">Správa:</label>
+                       <label for="text"><?php echo (${$_SESSION['lang']}['kontakty_form_sms'] ); ?></label>
                      <textarea id="text" name="text" rows="0" cols="0" class="required"></textarea>
                    <div class="cleaner h10"></div>          
                 <input type="submit" value="Send" id="submit" name="submit" class="submit_btn left" />
@@ -68,7 +91,7 @@
           <div class="half right">
                 <h4>Facebook</h4>
                   <h5>Vadym Tilihuzov</h5>       
-         <strong>Tel.čislo:</strong> +421******* <br />
+         <strong><?php echo (${$_SESSION['lang']}['kontakty_tel'] ); ?>Tel.čislo:</strong> +421******* <br />
         <strong>Email:</strong> <a href="mailto:vad.tili@gmail.com">vad.tili@gmail.com.com</a>  <br />
       <div class="cleaner h40"></div>
     </div>  
