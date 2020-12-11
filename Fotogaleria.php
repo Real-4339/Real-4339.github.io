@@ -42,19 +42,7 @@
             echo "English version";
           }
         ?></a></div>
-    <header id="block_1">
-        <nav>
-         <ul class="menu">
-            <li class="flex"><a href="Porovnanie.php">Porovnavanie</a></li> 
-          <li><a href="Prislusenstvo.php">Prislušenstvo</a></li>   
-          <li><a href="Dizajn.php">Dizajn</a></li>
-          <li><a href="Technicka šp.php">Technicka špecifikacia</a></li>
-          <li><a href="Kontakty.php">Kontakty</a></li>
-          <li><a href="Fotogaleria.php">Fotogaleria</a></li>
-          <li><a href="Domaca.php">Domaca</a></li>
-         </ul>
-        </nav>
-     </header> 
+    <?php include('includes/header.php') ?>
      <div class="container">
         <h1 id="h1_foto"><?php echo (${$_SESSION['lang']}['foto_h1'] ); ?></h1>
         <div id="gallery">
@@ -151,7 +139,7 @@
             <figure class="photo">
                 <a href="Gif/Originals/13p.jpg"><img src="Gif/Originals/13p.jpg" style="height: 400px;" alt="Výhľad okna" /></a>
             </figure>
-            <figure class="video">
+            <!-- <figure class="video">
                 <video controls loop width="200px" height="300px">
                     <source src="Gif/Originals/1v.MP4" />
                 </video>
@@ -160,13 +148,9 @@
                 <video controls loop width="300px" height="400px">
                     <source src="Gif/Originals/IMG_3758.MP4" />
                 </video>            
-            </figure>
+            </figure> -->
         </div>
     </div>
-  <footer class="footer">
-        <p>E-mail: vad.tili@gmail.com</p>
-        <p>Tel. čislo: +4217****9</p>
-        <p class="copyright">Copyright &copy by Vadym Tilihuzov</p>
-  </footer>
+  <?php include('includes/footer.php') ?>
 </body>
 </html>

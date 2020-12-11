@@ -731,7 +731,7 @@ $sk = [
      takže do sebe všetko krásne zapadá a vytvára jeden funkčný celok. 
      Výsledkom sú úchvatné fotografie, najlepšia rozšírená realita 
      či napríklad garantovaná jednodenná výdrž.",
-     "" => "",
+     "domaca_form_meno_2" => "Zadajte vaše meno",
      "" => "",
      "" => "",
    

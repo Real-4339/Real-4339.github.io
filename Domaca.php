@@ -42,19 +42,7 @@
             echo "English version";
           }
         ?></a></div>
-  <header id="block_1">
-        <nav>
-         <ul class="menu">
-            <li class="flex"><a href="Porovnanie.php">Porovnavanie</a></li> 
-          <li><a href="Prislusenstvo.php">Prislušenstvo</a></li>   
-          <li><a href="Dizajn.php">Dizajn</a></li>
-          <li><a href="Technicka šp.php">Technicka špecifikacia</a></li>
-          <li><a href="Kontakty.php">Kontakty</a></li>
-          <li><a href="Fotogaleria.php">Fotogaleria</a></li>
-          <li><a href="Domaca.php">Domaca</a></li>
-         </ul>
-        </nav>
-     </header> 
+  <?php include('includes/header.php') ?>
   <div id="greeting">
   <section>
     <article class="greetings">
@@ -81,10 +69,10 @@
     </p>
   </section>
     <footer>
-      <form class="comment" name="comment" action="comment.php" method="post">
+      <form class="comment" name="comment" action="comment.php" method="POST">
         <p>
           <label class="kom"><?php echo (${$_SESSION['lang']}['domaca_form_meno'] ); ?></label>
-          <input placeholder="Zadajte vaše meno" type="text" name="name" />
+          <input placeholder="<?php echo (${$_SESSION['lang']}['domaca_form_meno_2'] ); ?>" type="text" name="name" />
         </p>
         <p>
           <label class="kom"><?php echo (${$_SESSION['lang']}['domaca_form_kom'] ); ?></label>
@@ -92,16 +80,12 @@
           <textarea name="text_comment" cols="100" rows="5"></textarea>
         </p>
         <p>
-          <input type="hidden" name="page_id" value="150" />
+          <!-- <input type="hidden" name="page_id" value="10" /> -->
           <input type="submit" value="Submit" />
         </p>
       </form>
     </footer>
   </div>
-  <footer class="footer">
-        <p>E-mail: vad.tili@gmail.com</p>
-        <p>Tel. čislo: +4217****9</p>
-        <p class="copyright">Copyright &copy by Vadym Tilihuzov</p>
-  </footer>
+  <?php include('includes/footer.php') ?>
 </body>
 </html>

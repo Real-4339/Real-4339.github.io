@@ -42,19 +42,7 @@
             echo "English version";
           }
         ?></a></div>
-    <header id="block_1">
-        <nav>
-         <ul class="menu">
-            <li class="flex"><a href="Porovnanie.php">Porovnavanie</a></li> 
-          <li><a href="Prislusenstvo.php">Prislušenstvo</a></li>   
-          <li><a href="Dizajn.php">Dizajn</a></li>
-          <li><a href="Technicka šp.php">Technicka špecifikacia</a></li>
-          <li><a href="Kontakty.php">Kontakty</a></li>
-          <li><a href="Fotogaleria.php">Fotogaleria</a></li>
-          <li><a href="Domaca.php">Domaca</a></li>
-         </ul>
-        </nav>
-     </header>  
+    <?php include('includes/header.php') ?>
      <hr class="hry"/> 
      <div id="container">
    <section id="main_section">
@@ -151,10 +139,6 @@
      </blockquote>
    </aside>
   </div>
-  <footer class="footer">
-    <p>E-mail: vad.tili@gmail.com</p>
-    <p>Tel. čislo: +4217****9</p>
-    <p class="copyright">Copyright &copy by Vadym Tilihuzov</p>
-</footer>
+  <?php include('includes/footer.php') ?>
 </body>
 </html>
