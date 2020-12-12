@@ -3,14 +3,11 @@
 include('includes/db.php');
 
 $name = $_POST['name'];
+$komment = $_POST['text_comment'];
 
-$count = mysqli_query($connection, "SELECT * FROM `comments` WHERE `autor` = '$name'");
 
-if(0 == mysqli_num_rows($count))
-{
+$sql = mysqli_query($connection, "INSERT INTO `comments` (`text`,`autor`) VALUES ('$komment', '$name')");
 
-}
-else
-{
-    echo 'Uz existuje take konto';
-}
+echo "<script>window.open('Domaca.php','_self')</script>";
+
+?>

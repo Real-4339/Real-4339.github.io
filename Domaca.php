@@ -29,20 +29,9 @@
 </head>
 <body>    
   <div class="maim"><img src="Gif/Maimbot.png" width="10%" height="10%" /></div>
-  <div class="version"><a href="<?php 
-                 if($_SESSION['lang'] == "sk") {
-                   echo "/Domaca.php?lang=en";
-                 } else if ($_SESSION['lang'] == "en") {
-                   echo "/Domaca.php?lang=sk";
-                 } ?> ">
-        <?php 
-          if($_SESSION['lang'] == "en") {
-            echo "Slovak version";
-          } else {
-            echo "English version";
-          }
-        ?></a></div>
-  <?php include('includes/header.php') ?>
+  
+  <?php include('./includes/head.php'); ?>
+
   <div id="greeting">
   <section>
     <article class="greetings">
@@ -69,21 +58,61 @@
     </p>
   </section>
     <footer>
-      <form class="comment" name="comment" action="comment.php" method="POST">
+      <form class="comment" id="formo4ka" name="comment" action="comment.php" method="POST" onsubmit="submitForm(event)">
         <p>
           <label class="kom"><?php echo (${$_SESSION['lang']}['domaca_form_meno'] ); ?></label>
-          <input placeholder="<?php echo (${$_SESSION['lang']}['domaca_form_meno_2'] ); ?>" type="text" name="name" />
+          <input id="name" placeholder="<?php echo (${$_SESSION['lang']}['domaca_form_meno_2'] ); ?>" type="text" name="name" />
         </p>
         <p>
           <label class="kom"><?php echo (${$_SESSION['lang']}['domaca_form_kom'] ); ?></label>
           <br />
-          <textarea name="text_comment" cols="100" rows="5"></textarea>
+          <textarea id="text" name="text_comment" style="width: 70%; height: 75px;"></textarea>
         </p>
         <p>
           <!-- <input type="hidden" name="page_id" value="10" /> -->
           <input type="submit" value="Submit" />
         </p>
       </form>
+      <script type="text/javascript">
+
+    function submitForm(event){
+        event.preventDefault();
+
+        var wrngData = 0;
+        var tmp = 0;
+
+        // check name and text
+        var name = document.getElementById('name').value
+        var text = document.getElementById('text').value
+
+        if (name == "" || text == "")
+          wrngData = 1
+
+        if (wrngData) {
+          alert("Wrong input submited! Try again!")
+        } else {
+          document.getElementById("formo4ka").submit();
+          tmp = 1;
+        }
+    }
+</script> 
+    <?php
+           
+         include('includes/db.php');
+
+          $result = mysqli_query($connection, "SELECT * FROM `comments`");
+
+            if ($result != 0)
+            {
+              foreach( $result as $comment) {
+                echo 
+                "<div class=\"commentar\" style=\"width: 90%;\">
+                  <div class=\"name\">".$comment['autor']." </div>
+                  <div class=\"text\"><p>".$comment['text']."</p> </div>
+                </div>";
+              }
+            }
+        ?>
     </footer>
   </div>
   <?php include('includes/footer.php') ?>
