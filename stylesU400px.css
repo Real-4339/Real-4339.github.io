@@ -5,13 +5,12 @@
 	
 #navbar {
 	width:100%;
-	margin-top:0px;
+	margin-top:0px !important;
 	}
 	
 .article {
 	width:100%;
 	margin-top:50px;
-	
 	}
 	
 #enterWired {
@@ -20,5 +19,5 @@
 	}
 	
 .blinkFrame {
-	display:none;
+	display:none !important;
 	}

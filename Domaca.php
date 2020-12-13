@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="site.css">
 </head>
 <body>    
-  <div class="maim"><img src="Gif/Maimbot.png" /></div>
+  <div class="maim"><img src="Gif/Maimbot.svg" /></div>
   
   <span class="clude">
   <div class="version"><a href="<?php 
