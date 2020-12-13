@@ -80,7 +80,7 @@
   </style>
 </head>
 <body>
-    <div class="maim"><img src="Gif/Maimbot.png" width="10%" height="10%" /></div>
+    <div class="maim"><img src="Gif/Maimbot.png" /></div>
     
     <span class="clude">
   <div class="version"><a href="<?php 

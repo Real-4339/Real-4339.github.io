@@ -7,13 +7,13 @@ if($_SESSION['lang'] == "en") {
     echo "<header id=\"block_2\">
     <nav>
      <ul class=\"menu\">
-        <li><a href=\"Porovnavanie_en.html\">Comparing</a></li>
-  <li><a href=\"Prislušenstvo_en.html\">Accessories</a></li>
-  <li><a href=\"Dizajn_en.html\">Design</a></li>
-  <li><a href=\"Technicka_en šp.html\">Technical specification</a></li>
-  <li><a href=\"Kontakty_en.html\">Contacts</a></li>
-  <li><a href=\"Fotogaleria_en.html\">Photo gallery</a></li>
-  <li><a href=\"Domaca_en.html\">Home</a></li>
+        <li><a href=\"Porovnanie.php\">Comparing</a></li>
+  <li><a href=\"Prislusenstvo.php\">Accessories</a></li>
+  <li><a href=\"Dizajn.php\">Design</a></li>
+  <li><a href=\"Technicka šp.php\">Technical specification</a></li>
+  <li><a href=\"Kontakty.php\">Contacts</a></li>
+  <li><a href=\"Fotogaleria.php\">Photo gallery</a></li>
+  <li><a href=\"Domaca.php\">Home</a></li>
      </ul>
     </nav>
  </header> ";

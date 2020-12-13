@@ -426,12 +426,14 @@ a:hover { color: #fff; background: rgb(24, 144, 148); }
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
+    width: 10%;
+    height: 10%;
 }
 .version {
     border-radius: 2cm;
     float: right;
     margin-top: 5px;
-    margin-right: 6pc;
+    margin-right: 7pc;
     background-color: floralwhite;
 }
 .version a {
@@ -766,11 +768,7 @@ margin: 20px;
 }
 
 
-.thumb figure { 
-    width: 23%;
-    margin: 50px 50px 50px 85px;
-    display: inline-block;
-  }
+
   
   .thumb img {
     border: 1px solid #55c5e9;
@@ -798,24 +796,42 @@ margin: 20px;
  #container {
      margin-left: auto;
      margin-right: auto;
-     display: -moz-box;
-     display: -webkit-box;
      width: 90%;
      max-width: 1000px;
-     height: 280em;
-     -moz-box-orient: horizontal;
-     -webkit-box-orient: horizontal;
+     display: flex;
+     flex-direction: row;
+ }
+ @media only screen and (max-width: 913px) {
+  #container {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
  }
  #main_section{
-     -moz-box-flex: 1;
-     -webkit-box-flex: 1;
      margin: 20px 0px 20px 20px; 
      background: #cccccc;
+     height: 4350px;
+    width: 90%;
+    max-width: 1000px;
+ }
+
+ @media only screen and (max-width: 913px) {
+   #main_section {
+     margin: 0 auto;
+     display: flex;
+     justify-content: center;
+   }
  }
 #artrit {
     width: 200px;
     position: absolute;
     margin-left: 30px;
+}
+@media only screen and (max-width: 913px) {
+  #artrit {
+    margin-left: 0;
+  }
 }
 .pop {
     position: relative;
@@ -832,7 +848,8 @@ margin: 20px;
     
 }
 .pop hr {
-    width: 230px;
+  width: 98%;  
+  max-width: 330px;
 }
 table{
     margin: 10px;
@@ -846,18 +863,25 @@ td:nth-child(2n)
     font-weight: bold;
 }
  #main_aside{
-     width: 95%;
-     max-width: 620px;
+  width: 90%;
+  max-width: 1000px;
      margin: 20px 0px;
      padding: 10px;
      background: #cccccc;
  }
+
+ @media only screen and (max-width: 913px) {
+  #main_aside {
+    padding: 0;
+  }
+  }
  .block{
      margin: 10px 0px 50px 0px;
      padding: 20px;
  }
  .block hr{
-    width: 600px;
+  width: 90%;  
+  max-width: 600px;
 }
  hr{
     display: block;
@@ -869,7 +893,7 @@ td:nth-child(2n)
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-    width: 100%;
+    width: 98%;
     max-width: 650px;
  }
  
@@ -1090,6 +1114,32 @@ td:nth-child(2n)
     width: 86%;
     max-width: 700px; box-shadow:white 0px 5px 10px;border-radius: 6px;
   }
+  .thumb figure { 
+    width: 60%;
+    margin: 50px 50px 50px 85px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .maim img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 25%;
+    height: 25%;
+}
+ .Right {
+   margin-top: 50px;
+ }
+ audio {
+   max-width: 250px;
+ }
+  }
+  @media only screen and (max-width: 1280px)
+  {
+   .version {
+    margin-top: -112px;
+   }
   }
   @media only screen and (min-width: 913px)
   {
@@ -1113,11 +1163,17 @@ td:nth-child(2n)
     box-shadow:white 0px 5px 10px;
     border-radius: 6px;
   }
-  #diz_img_1 {
-    width: 440px; box-shadow:white 0px 5px 10px;border-radius: 6px;
+  .diz_img_1 {
+    width: 340px; box-shadow:white 0px 5px 10px;border-radius: 6px;
   }
-  #diz_img_2 {
+  .diz_img_2 {
     width: 700px; box-shadow:white 0px 5px 10px;border-radius: 6px;
+  }
+  
+  .thumb figure { 
+    width: 23%;
+    margin: 50px 50px 50px 85px;
+    display: inline-block;
   }
   }
   @media only screen and (min-width: 1093px) 
