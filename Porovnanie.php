@@ -29,12 +29,14 @@
 </head>
 <body>
     <div class="maim"><img src="Gif/Maimbot.png" width="10%" height="10%" /></div>
-    <div class="version"><a href="<?php 
+
+    <span class="clude">
+  <div class="version"><a href="<?php 
                  if($_SESSION['lang'] == "sk") {
-                   echo "/Porovnanie.php?lang=en";
-                 } else if ($_SESSION['lang'] == "en") {
-                   echo "/Porovnanie.php?lang=sk";
-                 } ?> ">
+                  echo "/Porovnanie.php?lang=en";
+                } else if ($_SESSION['lang'] == "en") {
+                  echo "/Porovnanie.php?lang=sk";
+                } ?> ">
         <?php 
           if($_SESSION['lang'] == "en") {
             echo "Slovak version";
@@ -42,70 +44,107 @@
             echo "English version";
           }
         ?></a></div>
-    <?php include('includes/header.php') ?>
+    <?php include('includes/header.php') ?></span>
+
+  <div class="tabs">
+  <div class="tab">
+    <input type="radio" id="tab-1" name="tab-group-1" />
+    <label for="tab-1">Menu <i>▼</i></label>
+    <div class="tab close-tab">
+      <input type="radio" id="tab-close" name="tab-group-1" />
+      <label for="tab-close">Menu <i>▲</i></label>
+    </div>
+    <div class="content">
+      <ul>
+      <li><a href="Domaca.php">Domaca</a></li>
+      <li><a href="Fotogaleria.php">Fotogaleria</a></li>
+      <li><a href="Kontakty.php">Kontakty</a></li>
+      <li><a href="Technicka šp.php">Technicka špecifikacia</a></li>
+      <li><a href="Dizajn.php">Dizajn</a></li>
+      <li><a href="Prislusenstvo.php">Prislušenstvo</a></li>
+      <li><a href="Porovnanie.php">Porovnavanie</a></li>      
+      </ul>
+    </div>
+  </div>
+  <div class="version_1"><a href="<?php 
+                 if($_SESSION['lang'] == "sk") {
+                  echo "/Porovnanie.php?lang=en";
+                } else if ($_SESSION['lang'] == "en") {
+                  echo "/Porovnanie.php?lang=sk";
+                } ?> ">
+        <?php 
+          if($_SESSION['lang'] == "en") {
+            echo "Slovak version";
+          } else {
+            echo "English version";
+          }
+        ?></a></div>
+  </div>
+
+
      <div class="article_1">
         <h1 class="h1_0"><?php echo (${$_SESSION['lang']}['porov_h1_1'] ); ?></h1>
         <br />
         <hr />
         <p><?php echo (${$_SESSION['lang']}['porov_article_1'] ); ?></p>
         <br>
-        <img style="width: 440px; border-radius: 6px;" src="Gif/Originals/1p.jpg" alt="image description" title="image tooltip"/>
+        <img style="width:86%; max-width: 440px; border-radius: 6px;" src="Gif/Originals/1p.jpg" alt="image description" title="image tooltip"/>
         <br />
         <p><?php echo (${$_SESSION['lang']}['porov_article_2'] ); ?>
           </p>   
        <br />
-        <img style="width: 400px; border-radius: 6px;" src="Gif/Originals/2p.jpg" alt="image description" title="image tooltip"/>
+        <img class = "por_img" src="Gif/Originals/2p.jpg" alt="image description" title="image tooltip"/>
         <br />
         <br />
         <p><?php echo (${$_SESSION['lang']}['porov_article_3'] ); ?>
           </p>
           <br />
-          <img style="width: 400px; border-radius: 6px;" src="Gif/Originals/4p.jpg" alt="image description" title="image tooltip"/>
+          <img class = "por_img" src="Gif/Originals/4p.jpg" alt="image description" title="image tooltip"/>
           <br />
          <p><?php echo (${$_SESSION['lang']}['porov_article_4'] ); ?>
            </p>
             <br />
-            <img style="width: 400px; border-radius: 6px;" src="Gif/Originals/art07.jpg" alt="image description" title="image tooltip"/>
+            <img class = "por_img" src="Gif/Originals/art07.jpg" alt="image description" title="image tooltip"/>
             <br />
           <p><?php echo (${$_SESSION['lang']}['porov_article_5'] ); ?>
             </p>
              <br />
-             <img style="width: 400px; border-radius: 6px;" src="Gif/Originals/art08.jpg" alt="image description" title="image tooltip"/>
+             <img class = "por_img" src="Gif/Originals/art08.jpg" alt="image description" title="image tooltip"/>
              <br />
          <p><?php echo (${$_SESSION['lang']}['porov_article_6'] ); ?>
            </p>
          <br />
-         <img style="width: 400px; border-radius: 6px;" src="Gif/Originals/art12.jpg" alt="image description" title="image tooltip"/>
+         <img class = "por_img" src="Gif/Originals/art12.jpg" alt="image description" title="image tooltip"/>
          <br />
         <p><?php echo (${$_SESSION['lang']}['porov_article_7'] ); ?>
           </p>
          <br />
-         <img style="width: 400px; border-radius: 6px;" src="Gif/Originals/12p.jpg" alt="image description" title="image tooltip"/>
+         <img class = "por_img" src="Gif/Originals/12p.jpg" alt="image description" title="image tooltip"/>
          <br /> 
          <p><?php echo (${$_SESSION['lang']}['porov_article_8'] ); ?>
            </p>
          <br />
-         <img style="width: 400px; border-radius: 6px;" src="Gif/Originals/art10.jpg" alt="image description" title="image tooltip"/>
+         <img class = "por_img" src="Gif/Originals/art10.jpg" alt="image description" title="image tooltip"/>
          <br /> 
        <p><?php echo (${$_SESSION['lang']}['porov_article_9'] ); ?>
          </p>
           <br />
-          <img style="width: 400px; border-radius: 6px;" src="Gif/Originals/art31.jpg" alt="image description" title="image tooltip"/>
+          <img class = "por_img" src="Gif/Originals/art31.jpg" alt="image description" title="image tooltip"/>
           <br /> 
         <p><?php echo (${$_SESSION['lang']}['porov_article_10'] ); ?>
           </p>
          <br />
-         <img style="width: 400px; border-radius: 6px;" src="Gif/Originals/art35.jpg" alt="image description" title="image tooltip"/>
+         <img class = "por_img" src="Gif/Originals/art35.jpg" alt="image description" title="image tooltip"/>
          <br /> 
          <p><?php echo (${$_SESSION['lang']}['porov_article_11'] ); ?>
            </p>
          <br />
-         <img style="width: 400px; border-radius: 6px;" src="Gif/Originals/art21.jpg" alt="image description" title="image tooltip"/>
+         <img class = "por_img" src="Gif/Originals/art21.jpg" alt="image description" title="image tooltip"/>
          <br /> 
        <p><?php echo (${$_SESSION['lang']}['porov_article_12'] ); ?>
          </p>
         <br />
-         <img style="width: 400px; border-radius: 6px;" src="Gif/Originals/art27.jpg" alt="image description" title="image tooltip"/>
+         <img class = "por_img" src="Gif/Originals/art27.jpg" alt="image description" title="image tooltip"/>
          <br />
          <p><?php echo (${$_SESSION['lang']}['porov_article_13'] ); ?>
            </p>

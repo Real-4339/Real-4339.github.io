@@ -30,23 +30,58 @@
 </head>
 <body>
     <div class="maim"><img src="Gif/Maimbot.png" width="10%" height="10%" /></div>
-    <div class="version">
-      <a href="<?php 
+
+    <span class="clude">
+  <div class="version"><a href="<?php 
                  if($_SESSION['lang'] == "sk") {
-                   echo "/Dizajn.php?lang=en";
-                 } else if ($_SESSION['lang'] == "en") {
-                   echo "/Dizajn.php?lang=sk";
-                 } ?> ">
+                  echo "/Dizajn.php?lang=en";
+                } else if ($_SESSION['lang'] == "en") {
+                  echo "/Dizajn.php?lang=sk";
+                } ?> ">
         <?php 
           if($_SESSION['lang'] == "en") {
             echo "Slovak version";
           } else {
             echo "English version";
           }
-        ?>
-      </a>
+        ?></a></div>
+    <?php include('includes/header.php') ?></span>
+
+  <div class="tabs">
+  <div class="tab">
+    <input type="radio" id="tab-1" name="tab-group-1" />
+    <label for="tab-1">Menu <i>▼</i></label>
+    <div class="tab close-tab">
+      <input type="radio" id="tab-close" name="tab-group-1" />
+      <label for="tab-close">Menu <i>▲</i></label>
     </div>
-    <?php include('includes/header.php') ?>
+    <div class="content">
+      <ul>
+      <li><a href="Domaca.php">Domaca</a></li>
+      <li><a href="Fotogaleria.php">Fotogaleria</a></li>
+      <li><a href="Kontakty.php">Kontakty</a></li>
+      <li><a href="Technicka šp.php">Technicka špecifikacia</a></li>
+      <li><a href="Dizajn.php">Dizajn</a></li>
+      <li><a href="Prislusenstvo.php">Prislušenstvo</a></li>
+      <li><a href="Porovnanie.php">Porovnavanie</a></li>      
+      </ul>
+    </div>
+  </div>
+  <div class="version_1"><a href="<?php 
+                 if($_SESSION['lang'] == "sk") {
+                  echo "/Dizajn.php?lang=en";
+                } else if ($_SESSION['lang'] == "en") {
+                  echo "/Dizajn.php?lang=sk";
+                } ?> ">
+        <?php 
+          if($_SESSION['lang'] == "en") {
+            echo "Slovak version";
+          } else {
+            echo "English version";
+          }
+        ?></a></div>
+  </div>
+
      <div class="article">
       <h1> <?php echo (${$_SESSION['lang']}['h1_dizajn'] ); ?></h1>
       <br /> 
@@ -55,10 +90,10 @@
       <?php echo (${$_SESSION['lang']}['dizajn_article_1'] ); ?>
       </p>
       <br>
-      <img style="width: 440px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/12p.jpg" alt="image description" title="image tooltip"/>
+      <img class = "diz_img_1" src="Gif/Originals/12p.jpg" alt="image description" title="image tooltip"/>
       <br />
       <br />
-      <img style="width: 400px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/11p.jpg" alt="image description" title="image tooltip"/>
+      <img class = "diz_img" src="Gif/Originals/11p.jpg" alt="image description" title="image tooltip"/>
       <br />
       <br />
       <br>
@@ -73,12 +108,12 @@
       <hr />
       <p><?php echo (${$_SESSION['lang']}['dizajn_article_3'] ); ?></p>
          <br />
-   <img style="width: 400px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/10p.jpg" alt="image description" title="image tooltip"/>
+   <img class = "diz_img" src="Gif/Originals/10p.jpg" alt="image description" title="image tooltip"/>
       <br />
       <br />
       <p><?php echo (${$_SESSION['lang']}['dizajn_article_4'] ); ?></p>
          <br />
-     <img style="width: 400px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/9p.jpg" alt="image description" title="image tooltip"/>
+     <img class = "diz_img" src="Gif/Originals/9p.jpg" alt="image description" title="image tooltip"/>
          <br />
          <br />
          <p>
@@ -104,13 +139,13 @@
         <?php echo (${$_SESSION['lang']}['dizajn_article_7'] ); ?>
       </p>
         <br />
-   <img style="width: 400px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/8p.jpg" alt="image description" title="image tooltip"/>
+   <img class = "diz_img" src="Gif/Originals/8p.jpg" alt="image description" title="image tooltip"/>
       <br />
       <p>
         <?php echo (${$_SESSION['lang']}['dizajn_article_8'] ); ?>
       </p>
             <br />
-            <img style="width: 400px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/14.jpg" alt="image description" title="image tooltip"/>
+            <img class = "diz_img" src="Gif/Originals/14.jpg" alt="image description" title="image tooltip"/>
            <br />
            <br />
          <p>
@@ -154,7 +189,7 @@
         <?php echo (${$_SESSION['lang']}['dizajn_article_13'] ); ?>
       </p>
             <br />
-    <img style="width: 700px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/pp.png" alt="image description" title="image tooltip"/>
+    <img class = "diz_img_2" src="Gif/Originals/pp.png" alt="image description" title="image tooltip"/>
     <br />
     <br />
     <p>
@@ -171,7 +206,7 @@
         <?php echo (${$_SESSION['lang']}['dizajn_article_15'] ); ?>
       </p>
      <br />
-    <img style="width: 400px; box-shadow:white 0px 5px 10px;border-radius: 6px;" src="Gif/Originals/2p.jpg" alt="image description" title="image tooltip"/>
+    <img class = "diz_img" src="Gif/Originals/2p.jpg" alt="image description" title="image tooltip"/>
     <br />
     <br />
     <p>

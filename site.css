@@ -521,7 +521,8 @@ small{
 
 
 .article {
-	width:800px;
+  width: 98%;
+  max-width:800px;
 	background-color:black;
 	height:auto;
 	margin-left:auto;
@@ -614,14 +615,16 @@ b {
     background: rgb(241, 234, 255);
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    width: 86%;
+    max-width: 1200px;
     height: 600px;
     box-shadow: black 0px 5px 10px;
     text-align: center;
     border: 26px solid #666;
 }
 #templatemo_main {
-	width: 960px;
+  width: 90%;
+	max-width: 960px;
 	padding: 40px 10px;
     margin: 0 auto;
     margin-top: 12px;
@@ -636,10 +639,7 @@ margin: 20px;
     margin: 20px;
 }
 
-.half { 
-	width: 465px; 
-	margin-bottom: 30px; 
-}
+
 .left { float:left }
 .right { float:right }
 
@@ -760,6 +760,12 @@ margin: 20px;
     margin-top: 20px;
 }
 
+.thumb {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 .thumb figure { 
     width: 23%;
     margin: 50px 50px 50px 85px;
@@ -794,7 +800,8 @@ margin: 20px;
      margin-right: auto;
      display: -moz-box;
      display: -webkit-box;
-     width: 1000px;
+     width: 90%;
+     max-width: 1000px;
      height: 280em;
      -moz-box-orient: horizontal;
      -webkit-box-orient: horizontal;
@@ -839,7 +846,8 @@ td:nth-child(2n)
     font-weight: bold;
 }
  #main_aside{
-     width: 620px;
+     width: 95%;
+     max-width: 620px;
      margin: 20px 0px;
      padding: 10px;
      background: #cccccc;
@@ -861,7 +869,8 @@ td:nth-child(2n)
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-     width: 650px;
+    width: 100%;
+    max-width: 650px;
  }
  
  .Right {
@@ -1046,6 +1055,10 @@ td:nth-child(2n)
     z-index: 3;
   }
 
+  .por_img {
+    width: 86%; max-width: 400px; border-radius: 6px;
+  }
+
   @media only screen and (max-width: 913px)
   {
     .tabs {
@@ -1054,6 +1067,29 @@ td:nth-child(2n)
     .clude {
       display: none;
     }
+    #img_4 img
+  {
+    height: 200px;
+  }
+  .half { 
+    width: 100%;
+    max-width: 465px; 
+    margin-bottom: 30px; 
+  }
+  .diz_img {
+    width: 86%;
+    max-width: 400px; 
+    box-shadow:white 0px 5px 10px;
+    border-radius: 6px;
+  }
+  .diz_img_1 {
+    width: 86%;
+    max-width: 440px; box-shadow:white 0px 5px 10px;border-radius: 6px;
+  }
+  .diz_img_2 {
+    width: 86%;
+    max-width: 700px; box-shadow:white 0px 5px 10px;border-radius: 6px;
+  }
   }
   @media only screen and (min-width: 913px)
   {
@@ -1063,4 +1099,37 @@ td:nth-child(2n)
     .clude {
       display: block;
     }
+    #img_4 img
+  {
+    height: 300px;
   }
+  .half { 
+    width: 50%;
+    max-width: 465px; 
+    margin-bottom: 30px; 
+  }
+  .diz_img {
+    width: 400px; 
+    box-shadow:white 0px 5px 10px;
+    border-radius: 6px;
+  }
+  #diz_img_1 {
+    width: 440px; box-shadow:white 0px 5px 10px;border-radius: 6px;
+  }
+  #diz_img_2 {
+    width: 700px; box-shadow:white 0px 5px 10px;border-radius: 6px;
+  }
+  }
+  @media only screen and (min-width: 1093px) 
+  {
+  #img_1 img{
+    height: 302px;
+  }
+  #img_2 img{
+    height: 285px;
+  }
+  #img_3 img{
+    height: 270px;
+  }
+  
+}

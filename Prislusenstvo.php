@@ -29,12 +29,14 @@
 </head>
 <body>
     <div class="maim"><img src="Gif/Maimbot.png" width="10%" height="10%" /></div>
-    <div class="version"><a href="<?php 
+
+    <span class="clude">
+  <div class="version"><a href="<?php 
                  if($_SESSION['lang'] == "sk") {
-                   echo "/Prislusenstvo.php?lang=en";
-                 } else if ($_SESSION['lang'] == "en") {
-                   echo "/Prislusenstvo.php?lang=sk";
-                 } ?> ">
+                  echo "/Prislusenstvo.php?lang=en";
+                } else if ($_SESSION['lang'] == "en") {
+                  echo "/Prislusenstvo.php?lang=sk";
+                } ?> ">
         <?php 
           if($_SESSION['lang'] == "en") {
             echo "Slovak version";
@@ -42,31 +44,69 @@
             echo "English version";
           }
         ?></a></div>
-    <?php include('includes/header.php') ?>
+    <?php include('includes/header.php') ?></span>
+
+  <div class="tabs">
+  <div class="tab">
+    <input type="radio" id="tab-1" name="tab-group-1" />
+    <label for="tab-1">Menu <i>▼</i></label>
+    <div class="tab close-tab">
+      <input type="radio" id="tab-close" name="tab-group-1" />
+      <label for="tab-close">Menu <i>▲</i></label>
+    </div>
+    <div class="content">
+      <ul>
+      <li><a href="Domaca.php">Domaca</a></li>
+      <li><a href="Fotogaleria.php">Fotogaleria</a></li>
+      <li><a href="Kontakty.php">Kontakty</a></li>
+      <li><a href="Technicka šp.php">Technicka špecifikacia</a></li>
+      <li><a href="Dizajn.php">Dizajn</a></li>
+      <li><a href="Prislusenstvo.php">Prislušenstvo</a></li>
+      <li><a href="Porovnanie.php">Porovnavanie</a></li>      
+      </ul>
+    </div>
+  </div>
+  <div class="version_1"><a href="<?php 
+                if($_SESSION['lang'] == "sk") {
+                  echo "/Prislusenstvo.php?lang=en";
+                } else if ($_SESSION['lang'] == "en") {
+                  echo "/Prislusenstvo.php?lang=sk";
+                } ?> ">
+        <?php 
+          if($_SESSION['lang'] == "en") {
+            echo "Slovak version";
+          } else {
+            echo "English version";
+          }
+        ?></a></div>
+  </div>
+
+
+
      <div class="thumb">
         <h1 id="oto" style="text-shadow: black 2px 2px 2px;"><?php echo (${$_SESSION['lang']}['h1_prislusenstvo'] ); ?></h1>
         <figure>
           <img src="Gif/Originals/kop.jpg">
           <figcaption><?php echo (${$_SESSION['lang']}['prislusenstvo_fig_1'] ); ?></figcaption>
         </figure><!--
-        --><figure>
-          <img src="Gif/Originals/lol.jpg" style = "height: 302px;">
+        --><figure id = "img_1">
+          <img src="Gif/Originals/lol.jpg">
           <figcaption><?php echo (${$_SESSION['lang']}['prislusenstvo_fig_2'] ); ?></figcaption>
         </figure><!--
-        --><figure>
-          <img style = "height: 300px; background-color: white; object-fit: contain;" src="Gif/Originals/mom.jpg">
+        --><figure id = "img_4">
+          <img style = "background-color: white; object-fit: contain;" src="Gif/Originals/mom.jpg">
           <figcaption><?php echo (${$_SESSION['lang']}['prislusenstvo_fig_3'] ); ?></figcaption>
         </figure><!--
         --><figure>
           <img src="Gif/Originals/okjpg.jpg">
           <figcaption><?php echo (${$_SESSION['lang']}['prislusenstvo_fig_4'] ); ?></figcaption>
         </figure><!--
-        --><figure>
-          <img src="Gif/Originals/op.jpg" style = "height: 285px;">
+        --><figure id = "img_2">
+          <img src="Gif/Originals/op.jpg">
           <figcaption><?php echo (${$_SESSION['lang']}['prislusenstvo_fig_5'] ); ?></figcaption>
         </figure><!--
-        --><figure>
-          <img src="Gif/Originals/top.jpg" style = "height: 270px;">
+        --><figure id = "img_3">
+          <img src="Gif/Originals/top.jpg">
           <figcaption><?php echo (${$_SESSION['lang']}['prislusenstvo_fig_6'] ); ?></figcaption>
         </figure>
       </div>
